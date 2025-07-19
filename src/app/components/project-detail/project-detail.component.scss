@@ -1,0 +1,312 @@
+/* src/app/project-detail/project-detail.component.scss */
+
+// SASS Renk Değişkenleri (Mevcut değişkenlerinizle aynı olmalı)
+$dark-background: #1e1e1e;
+$card-background: #2c2c2c;
+$teal-primary: #2dd4bf;
+$teal-secondary: #5eead4;
+$text-primary: #f0f0f0;
+$text-secondary: #d4d4d4;
+$border-color: #444444;
+$accent-green: #00C0A6;
+$text-white: #FFFFFF;
+
+// Gölge Değişkenleri
+$shadow-light: 0 2px 8px rgba(0, 0, 0, 0.15);
+$shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.25);
+$shadow-strong: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+// Kenar Yuvarlama (Border Radius) Değişkenleri
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 12px;
+
+:host {
+    display: block !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: $dark-background;
+}
+
+
+.project-detail-section.mg-v2 {
+    padding: 100px 20px;
+    background-color: $dark-background;
+    color: $text-primary;
+
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+}
+
+.container.mg-container-v2 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+    background-color: transparent;
+    color: $teal-primary;
+    border: 1px solid $teal-primary;
+    padding: 10px 20px;
+    border-radius: $border-radius-small;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        background-color: rgba($teal-primary, 0.1);
+        color: $teal-secondary;
+        border-color: $teal-secondary;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+}
+
+.project-detail-content.mg-project-detail-content-v2 {
+    background-color: $card-background;
+    border-radius: $border-radius-medium;
+    box-shadow: $shadow-medium;
+    padding: 40px;
+    text-align: left;
+
+    @media (max-width: 768px) {
+        padding: 25px;
+    }
+}
+
+.detail-title.mg-detail-title-v2 {
+    font-size: 2.5rem;
+    color: $teal-primary;
+    margin-bottom: 25px;
+    margin-top: 4px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: $teal-secondary;
+        border-radius: 1.5px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+.detail-image-wrapper.mg-detail-image-wrapper-v2 {
+    width: 100%;
+    overflow: hidden;
+    border-radius: $border-radius-medium;
+    margin-bottom: 30px;
+    box-shadow: $shadow-strong;
+    background-color: lighten($card-background, 3%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .detail-image.mg-detail-image-v2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &.no-image {
+        background-color: lighten($card-background, 8%);
+        border: 2px dashed $border-color;
+        flex-direction: column;
+
+        .no-image-placeholder {
+            text-align: center;
+
+            i {
+                font-size: 5rem;
+                color: $teal-secondary;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: $text-secondary;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &.backend-type {
+        background-color: desaturate(lighten($teal-primary, 20%), 20%);
+
+        .no-image-placeholder i {
+            color: $dark-background;
+        }
+    }
+
+    &.data-science-type {
+        background-color: desaturate(lighten(purple, 20%), 20%);
+
+        .no-image-placeholder i {
+            color: $dark-background;
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+.detail-description.mg-detail-description-v2 {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: $text-secondary;
+    margin-bottom: 30px;
+    white-space: pre-wrap;
+}
+
+.detail-section {
+    margin-bottom: 25px;
+
+    h3 {
+        font-size: 1.5rem;
+        color: $teal-primary;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba($teal-secondary, 0.3);
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: $text-secondary;
+        white-space: pre-wrap;
+    }
+
+    // Yeni Madde İşaretli Liste Stilleri
+    .contributions-list.mg-contributions-list-v2 {
+        list-style: none; // Varsayılan madde işaretini kaldır
+        padding: 0;
+        margin: 0;
+        margin-left: 20px; // Sol boşluk
+
+        li {
+            display: flex;
+            align-items: flex-start; // İkon ve metni başından hizala
+            margin-bottom: 12px; // Maddeler arası boşluk
+            font-size: 1rem;
+            color: $text-secondary;
+            line-height: 1.6;
+
+            .check-icon {
+                color: $accent-green; // Onay işareti rengi
+                font-size: 1.2rem;
+                margin-right: 10px; // İkon ile metin arası boşluk
+                flex-shrink: 0; // İkonun küçülmesini engelle
+                margin-top: 3px; // Metinle dikey hizalama için ufak ayarlama
+            }
+        }
+    }
+}
+
+
+.detail-techs.mg-detail-techs-v2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    h4 {
+        font-size: 1.3rem;
+        color: $teal-primary;
+        margin-bottom: 15px;
+    }
+
+    .tech-badges-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tech-badge.mg-tech-badge-v2 {
+        background-color: $teal-secondary;
+        color: $dark-background;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+.detail-links.mg-detail-links-v2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: flex-start;
+
+    .btn.mg-btn {
+        padding: 10px 22px;
+        font-size: 1rem;
+        border-radius: $border-radius-small;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        font-weight: 500;
+        border: 1px solid transparent;
+
+        &.mg-btn-primary {
+            background-color: $teal-primary;
+            color: $dark-background;
+
+            &:hover {
+                background-color: darken($teal-primary, 10%);
+            }
+        }
+
+        &.mg-btn-secondary {
+            background-color: transparent;
+            color: $teal-primary;
+            border-color: $teal-primary;
+
+            &:hover {
+                background-color: rgba($teal-primary, 0.1);
+                color: $teal-secondary;
+                border-color: $teal-secondary;
+            }
+        }
+    }
+
+    .no-link-text {
+        font-size: 0.9rem;
+        color: $text-secondary;
+        padding: 10px 20px;
+        border: 1px solid $border-color;
+        border-radius: $border-radius-small;
+        background-color: darken($card-background, 5%);
+        cursor: not-allowed;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+div:has(p.project-not-found) {
+    text-align: center;
+    color: $text-secondary;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}

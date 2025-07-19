@@ -1,0 +1,272 @@
+/* src/app/projects-section/projects-section.component.scss */
+
+// SASS Renk Değişkenleri (Önceki About Me ve Hero section tasarımına uygun güncellendi)
+$dark-background: #1e1e1e; // Genel koyu arka plan
+$card-background: #2c2c2c; // Kartların arka planı (biraz daha açık koyu)
+$teal-primary: #2dd4bf; // Ana vurgu rengi (başlıklar, ana buton)
+$teal-secondary: #5eead4; // Daha açık teal tonu (bazı vurgular, border)
+$text-primary: #f0f0f0; // Ana metin rengi
+$text-secondary: #d4d4d4; // İkincil metin rengi (açıklamalar)
+$border-color: #444444; // Genel sınır çizgileri
+$accent-green: #00C0A6;
+$text-white: #FFFFFF;
+
+// Gölge Değişkenleri
+$shadow-light: 0 2px 8px rgba(0, 0, 0, 0.15);
+$shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.25);
+$shadow-strong: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+// Kenar Yuvarlama (Border Radius) Değişkenleri
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 12px;
+
+:host {
+    display: block !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: $dark-background;
+}
+
+.projects-section.mg-v2 {
+    padding: 100px 20px;
+    background-color: $dark-background;
+    color: $text-primary;
+    text-align: center; // Başlık ve genel içerik için
+
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+}
+
+.container.mg-container-v2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title.mg-section-title-v2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: $text-white;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative; // Alt çizgi için
+
+    &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: $accent-green;
+        margin: 15px auto 0 auto;
+        border-radius: 2px;
+    }
+
+    // Responsive Ayarlamalar
+    @media (max-width: 767px) {
+        .section-title.mg-section-title-v2 {
+            font-size: 2.8em;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.projects-grid.mg-projects-grid-v2 {
+    display: grid;
+    // Büyük ekranlarda 2 kolon, mobil cihazlara doğru tek kolona düşecek şekilde ayarlandı
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px; // Kartlar arası boşluk
+    justify-content: center;
+    align-items: stretch; // Kartların eşit yükseklikte olmasını sağlar
+}
+
+.project-card.mg-project-card-v2 {
+    background-color: $card-background;
+    border-radius: $border-radius-medium;
+    overflow: hidden;
+    box-shadow: $shadow-medium;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row; // Resmi sola, içeriği sağa yan yana diz
+    align-items: center; // Dikeyde ortala
+    padding: 20px;
+    // border: 1px solid $border-color; // Hafif bir çerçeve
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-strong;
+    }
+
+    .project-image-wrapper.mg-project-image-wrapper-v2 {
+        width: 160px; // Sabit genişlik
+        height: 100px; // Sabit yükseklik
+        overflow: hidden;
+        border-radius: $border-radius-small;
+        margin-right: 25px; // Resim ile metin arası boşluk
+        flex-shrink: 0; // Görüntünün küçülmesini engelle
+        // Gölge eklendi, görsele derinlik katması için
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        margin-bottom: auto;
+        margin-top: 74px;
+    }
+
+    .project-image.mg-project-image-v2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Resmin kutuyu doldurmasını sağlar
+        display: block; // img elementinin altındaki boşluğu giderir
+    }
+
+    .project-info.mg-project-info-v2 {
+        flex-grow: 1; // Kalan alanı kapla
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; // İçeriği dağıt
+        text-align: left; // Metinleri sola hizala
+    }
+
+    .project-category-date {
+        /* JSON'da bir tarih/kategori anahtarı eklenirse kullanılabilir */
+        font-size: 0.85rem;
+        color: $teal-secondary; // Daha açık teal tonunda tarih/kategori
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .project-title.mg-project-title-v2 {
+        font-size: 1.4rem; // Başlık boyutu
+        color: $teal-primary; // Proje başlığı teal renginde
+        margin-bottom: 8px;
+        margin-top: 12px;
+    }
+
+    .project-description.mg-project-description-v2 {
+        font-size: 14px;
+        color: $text-secondary; // Açıklama ikincil metin renginde
+        line-height: 1.5;
+        margin-bottom: 15px;
+        height: 150px;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .project-techs.mg-project-techs-v2 {
+        display: flex;
+        flex-wrap: wrap; // Teknolojileri yeni satıra sar
+        gap: 8px; // Etiketler arası boşluk
+        height: 68px;
+        margin-top: 10px;
+    }
+
+    .tech-badge.mg-tech-badge-v2 {
+        background-color: $teal-secondary; // Teknoloji etiketi arka planı açık teal
+        color: $dark-background; // Teknoloji etiketi metni koyu
+        padding: 5px 10px;
+        border-radius: 15px; // Daha yuvarlak etiketler
+        font-size: 0.8rem;
+        font-weight: 600;
+        height: 20px;
+    }
+
+    .project-links.mg-project-links-v2 {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+        justify-content: flex-start; // Butonları sola hizala
+
+        .btn.mg-btn {
+            padding: 8px 18px;
+            font-size: 0.9rem;
+            border-radius: $border-radius-small;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            font-weight: 500;
+            border: 1px solid transparent; // Varsayılan şeffaf sınır
+
+            &.mg-btn-primary {
+                // GitHub butonu
+                background-color: $teal-primary;
+                color: $dark-background;
+
+                &:hover {
+                    background-color: darken($teal-primary, 10%);
+                }
+            }
+
+            &.mg-btn-secondary {
+                // Demo butonu
+                background-color: transparent;
+                color: $teal-primary;
+                border-color: $teal-primary;
+
+                &:hover {
+                    background-color: rgba($teal-primary, 0.1);
+                    color: $teal-secondary;
+                    border-color: $teal-secondary;
+                }
+            }
+        }
+    }
+}
+
+// Mobil ve Tablet Duyarlılığı
+@media (max-width: 992px) {
+    .projects-grid.mg-projects-grid-v2 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // Daha küçük kartlara izin ver
+        gap: 25px;
+    }
+
+    .project-card.mg-project-card-v2 {
+        flex-direction: column; // Mobil için alt alta diz
+        align-items: flex-start;
+        padding: 18px;
+        max-width: 400px; // Mobil görünümde kartın maksimum genişliği
+        margin: 0 auto; // Kartı ortala
+    }
+
+    .project-card.mg-project-card-v2 .project-image-wrapper.mg-project-image-wrapper-v2 {
+        width: 100%; // Mobil için resmi tam genişlik yap
+        height: 180px; // Mobil için resim yüksekliği
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .project-card.mg-project-card-v2 .project-info.mg-project-info-v2 {
+        align-items: flex-start;
+    }
+
+    .project-card.mg-project-card-v2 .project-links.mg-project-links-v2 {
+        margin-top: 15px;
+        flex-direction: row; // Butonları yine yan yana tut
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-section.mg-v2 {
+        padding: 40px 0;
+    }
+
+    .section-title.mg-section-title-v2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .projects-grid.mg-projects-grid-v2 {
+        gap: 20px;
+    }
+
+    .project-card.mg-project-card-v2 .project-links.mg-project-links-v2 {
+        flex-direction: column; // Çok küçük ekranlarda butonları dikey sırala
+
+        .btn.mg-btn {
+            width: 100%; // Butonları tam genişlik yap
+        }
+    }
+}

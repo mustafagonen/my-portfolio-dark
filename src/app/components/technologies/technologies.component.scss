@@ -1,0 +1,170 @@
+/* src/app/skills-section/skills-section.component.scss */
+
+// SASS Renk Değişkenleri (Mevcut değişkenlerinizle aynı olmalı)
+$dark-background: #1e1e1e;
+$card-background: #2c2c2c;
+$teal-primary: #2dd4bf;
+$teal-secondary: #5eead4;
+$text-primary: #f0f0f0;
+$text-secondary: #d4d4d4;
+$border-color: #444444;
+$accent-green: #00C0A6;
+$text-white: #FFFFFF;
+
+// Gölge Değişkenleri
+$shadow-light: 0 2px 8px rgba(0, 0, 0, 0.15);
+$shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.25);
+$shadow-strong: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+// Kenar Yuvarlama (Border Radius) Değişkenleri
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 12px;
+
+:host {
+    display: block !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: $dark-background;
+}
+
+
+.skills-section.mg-v2 {
+    padding: 100px 20px;
+    background-color: $dark-background;
+    color: $text-primary;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+}
+
+.container.mg-container-v2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title.mg-section-title-v2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: $text-white;
+    margin-bottom: 40px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: $accent-green;
+        margin: 15px auto 0 auto;
+        border-radius: 2px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 2.8em;
+        margin-bottom: 30px;
+    }
+}
+
+.skills-categories.mg-skills-categories-v2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; // Kategori blokları arası boşluk
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.skill-category-block.mg-skill-category-block-v2 {
+    background-color: $card-background;
+    border-radius: $border-radius-medium;
+    padding: 30px;
+    flex: 1; // Genişliği esnek yapar
+    min-width: 300px; // Minimum genişlik
+    max-width: 400px; // Maksimum genişlik
+    box-shadow: $shadow-medium;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; // İçerik sola hizalı
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-strong;
+    }
+
+    @media (max-width: 992px) {
+        width: 100%; // Tablet ve mobil cihazlarda tam genişlik
+        max-width: 600px; // Daha büyük ekranlarda maksimum genişliği sınırlar
+        padding: 25px;
+    }
+}
+
+.category-title.mg-category-title-v2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $teal-primary;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center; // Kategori başlıkları ortalı
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: $teal-secondary;
+        border-radius: 1.5px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+.skills-grid.mg-skills-grid-v2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; // Yetenek kartları arası boşluk
+    justify-content: center; // Yetenekleri ortala
+}
+
+.skill-item.mg-skill-item-v2 {
+    background-color: lighten($card-background, 5%);
+    color: $text-primary;
+    padding: 10px 15px;
+    border-radius: $border-radius-small;
+    display: inline-flex; // İçeriği yatayda hizala
+    align-items: center;
+    gap: 8px; // İkon ve metin arası boşluk
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid $border-color;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: lighten($card-background, 10%);
+        transform: translateY(-2px);
+    }
+
+    .skill-icon {
+        color: $teal-secondary; // İkon rengi
+        font-size: 1.1rem;
+    }
+
+    // .skill-name {
+    //     po
+    //     // metin için ek stil ayarı gerekirse
+    // }
+}

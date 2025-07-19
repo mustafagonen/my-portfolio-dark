@@ -1,0 +1,513 @@
+{
+    "NAVBAR": {
+        "ABOUT": "Hakkımda",
+        "SKILLS": "Yetenekler",
+        "PROJECTS": "Projeler",
+        "WORKS": "Çalışmalar",
+        "CONTACT": "İletişim",
+        "DOWNLOAD_CV": "CV İndir"
+    },
+    "HERO": {
+        "GREETING_PART1": "Merhaba, Ben ",
+        "NAME": "Mustafa Gönen",
+        "POSITION": "Frontend Geliştiricisi",
+        "INTRO_P1": "6 yılı aşkın Frontend Geliştirme deneyimimle, web uygulamalarını optimize etmeye odaklanarak Angular, Vue ve TypeScript'te öne çıkıyorum. Kendini işine adamış bir Yazılım Geliştiricisi olarak, yüksek performans odaklı yenilikçi yazılım çözümlerine katkıda bulunmaktan heyecan duyuyorum. Bu yılın sonuna kadar ODTÜ Bilgisayar Mühendisliği bölümündeki lisans eğitimimi tamamlamayı hedefliyorum.",
+        "CALL_TO_ACTION_PROJECTS": "Projelerimi Gör",
+        "CALL_TO_ACTION_CONTACT": "Bana Ulaş"
+    },
+    "ABOUT_SECTION": {
+        "TITLE": "Hakkımda",
+        "INTRO_P1": "Frontend Geliştiricisi olarak, kullanıcı odaklı ve yaratıcı web deneyimleri tasarlamak ve geliştirmek en büyük tutkum. Teknolojiye olan merakım ve sürekli öğrenme arzum, beni bu dinamik alanda her gün daha ileriye taşıyor.",
+        "INTRO_P2": "Kariyer yolculuğum boyunca edindiğim deneyimler ve projelerle, dijital dünyada estetik ve fonksiyonelliği bir araya getirmeyi hedefliyorum. Kullanıcı deneyimini merkeze alarak, erişilebilir ve performanslı uygulamalar geliştirmeye odaklanıyorum.",
+        "TIMELINE_HEADING": "Kariyer Yolculuğum",
+        "TIMELINE_ITEM_1_DATE": "Hepsiburada (2022 - 2025)",
+        "TIMELINE_ITEM_1_TITLE": "Software Developer",
+        "TIMELINE_ITEM_1_DESC": "Vue.js ve Angular kullanarak yüksek performanslı ön yüz çözümlerinin geliştirilmesine öncülük ettim, veri akışını optimize etmek için backend ekipleriyle iş birliği yaptım, yeniden kullanılabilir bileşenler oluşturdum ve kullanıcı deneyimini geliştirmek ve hataları azaltmak için RESTful API'leri entegre ettim.",
+        "TIMELINE_ITEM_2_DATE": "Me Tech Digital (2022 - 2023)",
+        "TIMELINE_ITEM_2_TITLE": "Frontend Developer",
+        "TIMELINE_ITEM_2_DESC": "Uluslararası projeler için birden fazla Angular tabanlı kullanıcı arayüzünün geliştirilmesine öncülük ettim, backend ve UX/UI ekipleriyle iş birliği yaparak duyarlı (responsive), tarayıcı uyumlu çözümler sundum, performansı optimize ettim ve kod kalitesini incelemeler ve yeniden kullanılabilir bileşenler aracılığıyla artırdım.",
+        "TIMELINE_ITEM_3_DATE": "Argus Technology (2019 - 2022)",
+        "TIMELINE_ITEM_3_TITLE": "Full Stack Developer ",
+        "TIMELINE_ITEM_3_DESC": "Modern bir CMS’e dinamik Angular UI bileşenleri geliştirerek katkıda bulundum, WebRTC ve WebSocket ile verimli video akış mimarileri uyguladım, Git tabanlı versiyon kontrolüyle ekip iş birliğini geliştirdim ve HTML5/CSS3 standartlarıyla kod kalitesini optimize ederek hata ayıklama ve geliştirme süresini azalttım.",
+        "TIMELINE_ITEM_4_DATE": "Argus Technology (2019)",
+        "TIMELINE_ITEM_4_TITLE": "Computer Engineering Intern",
+        "TIMELINE_ITEM_4_DESC": "Bu staj sırasında HTML, CSS ve JavaScript’in temellerini öğrendim ve özellikle Angular ile modern frontend framework’lerinde pratik deneyim kazandım.",
+        "TIMELINE_ITEM_5_DATE": "SimBT Inc. Simulation Science and Technologies (2018)",
+        "TIMELINE_ITEM_5_TITLE": "Computer Engineering Intern",
+        "TIMELINE_ITEM_5_DESC": "İK departmanı için Kurumsal Bilgi Sistemi’nin tasarım ve geliştirilmesine katkıda bulundum, ön yüzde (HTML, CSS, JavaScript) ve arka planda (.NET/C# ve MySQL) Microsoft Visual Studio kullanarak çalıştım.",
+        "TIMELINE_ITEM_6_DATE": "Midde East Technical University (ODTÜ - 2017)",
+        "TIMELINE_ITEM_6_TITLE": "Üniversite Eğitimi",
+        "TIMELINE_ITEM_6_DESC": "Bilgisayar Mühendisliği lisans programına başladım."
+    },
+    "SKILLS_SECTION": {
+        "TITLE": "Yeteneklerim",
+        "FRONTEND_TITLE": "Frontend",
+        "BACKEND_TITLE": "Backend",
+        "DATABASES_TITLE": "Veritabanları",
+        "DEVOPS_TITLE": "DevOps & Bulut",
+        "TOOLS_TITLE": "Araçlar & Diğerleri",
+        "SKILL_ITEMS": [
+            {
+                "name": "Angular",
+                "category": "frontend",
+                "iconClass": "fab fa-angular"
+            },
+            {
+                "name": "Vue.js",
+                "category": "frontend",
+                "iconClass": "fab fa-vuejs"
+            },
+            {
+                "name": "TypeScript",
+                "category": "frontend",
+                "iconClass": "fab fa-js-square"
+            },
+            {
+                "name": "JavaScript",
+                "category": "frontend",
+                "iconClass": "fab fa-js"
+            },
+            {
+                "name": "HTML",
+                "category": "frontend",
+                "iconClass": "fab fa-html5"
+            },
+            {
+                "name": "CSS",
+                "category": "frontend",
+                "iconClass": "fab fa-css3-alt"
+            },
+            {
+                "name": "TailwindCSS",
+                "category": "frontend",
+                "iconClass": "fas fa-wind"
+            },
+            {
+                "name": "Node.js",
+                "category": "backend",
+                "iconClass": "fab fa-node-js"
+            },
+            {
+                "name": ".NET",
+                "category": "backend",
+                "iconClass": "fas fa-dot-circle"
+            },
+            {
+                "name": "C#",
+                "category": "backend",
+                "iconClass": "fas fa-hashtag"
+            },
+            {
+                "name": "MySQL",
+                "category": "databases",
+                "iconClass": "fas fa-database"
+            },
+            {
+                "name": "Entity Framework",
+                "category": "backend",
+                "iconClass": "fas fa-database"
+            },
+            {
+                "name": "MSSQL",
+                "category": "databases",
+                "iconClass": "fas fa-server"
+            },
+            {
+                "name": "Git",
+                "category": "devops",
+                "iconClass": "fab fa-git-alt"
+            },
+            {
+                "name": "GitLab",
+                "category": "devops",
+                "iconClass": "fab fa-gitlab"
+            },
+            {
+                "name": "Linux",
+                "category": "devops",
+                "iconClass": "fab fa-linux"
+            },
+            {
+                "name": "Figma",
+                "category": "tools",
+                "iconClass": "fab fa-figma"
+            },
+            {
+                "name": "Zeplin",
+                "category": "tools",
+                "iconClass": "fas fa-drafting-compass"
+            },
+            {
+                "name": "Jira",
+                "category": "tools",
+                "iconClass": "fab fa-jira"
+            },
+            {
+                "name": "npm",
+                "category": "tools",
+                "iconClass": "fab fa-npm"
+            },
+            {
+                "name": "Yarn",
+                "category": "tools",
+                "iconClass": "fab fa-yarn"
+            }
+        ]
+    },
+    "PROJECTS_SECTION": {
+        "TITLE": "Projelerim",
+        "VIEWLIVE": "Canlı Projeyi İncele",
+        "BACK_TO_PROJECTS": "Projelere Geri Dön",
+        "NO_DETAIL_IMAGE_TEXT": "Detay Görseli Yok",
+        "CHALLENGES_TITLE": "Karşılaşılan Zorluklar",
+        "SOLUTION_TITLE": "Çözüm",
+        "LEARNINGS_TITLE": "Öğrenilenler",
+        "TECHNOLOGIES_USED": "Kullanılan Teknolojiler",
+        "PROJECT_NOT_FOUND": "Proje bulunamadı.",
+        "CONTRIBUTIONS_TITLE_KEY": "Katkılarım",
+        "PROJECT_ITEMS": [
+            {
+                "id": "project1",
+                "image": "assets/images/hepsilojistik.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_1_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_1_DESC",
+                "technologies": [
+                    "Angular",
+                    "TypeScript",
+                    "Node.js",
+                    "Javascript",
+                    "Express.js"
+                ],
+                "contributionsKeys": [
+                    "Angular kullanarak modülerlik, yeniden kullanılabilirlik ve sürdürülebilirliğe odaklanarak frontend'i tasarladım ve uyguladım.",
+                    "Çeşitli depo rollerine özel dinamik kontrol panelleri, gerçek zamanlı durum takibi ve görev tabanlı kullanıcı arayüzü bileşenleri entegre ettim.",
+                    "Envanter hareketlerini, sevkiyat hazırlığını ve teslimat yönlendirmesini yönetmek için özel direktifler ve akıllı form bileşenleri oluşturdum.",
+                    "Farklı kullanıcı grupları ve izin seviyeleri için güvenli rol tabanlı erişim kontrolü ve koşullu kullanıcı arayüzü oluşturmayı sağladım.",
+                    ".NET Core ve PHP backend ekipleriyle yakın koordinasyon içinde çalışarak REST API'leri tükettim ve veri akış mantığını hizaladım.",
+                    "Projenin kritik aşamalarında UI mimarisi kararlarına liderlik ettim, kodlama standartlarını belirledim ve genç geliştiricilere mentorluk yaptım.",
+                    "Tembel yükleme stratejileri ve durum optimizasyonu uygulayarak sistemin yanıt hızını ve başlangıç süresini iyileştirdim."
+                ],
+                "demoLink": "https://www.hepsiburada.com/hepsilojistik",
+                "demoLinkLabel": "Projeyi İncele (VPN Gerekli)",
+                "githubLink": "https://github.com/mustafagonen/proje1"
+            },
+            {
+                "id": "project2",
+                "image": "assets/images/merchant.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_2_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_2_DESC",
+                "technologies": [
+                    "Vue.js",
+                    "Node.js",
+                    "Javascript",
+                    "Express.js"
+                ],
+                "contributionsKeys": [
+                    "Tüm frontend'i Vue.js ile inşa ettim, akıcı ve modern bir tek sayfa uygulama deneyimi sundum.",
+                    "Sevkiyat planlama, etiket oluşturma ve kapasite planlama arayüzleri dahil karmaşık kullanıcı arayüzü akışları uyguladım.",
+                    "Çeşitli cihaz boyutlarında erişilebilirlik sağlamak için duyarlı ve mobil öncelikli tasarıma odaklandım.",
+                    "Kullanıcıları sevkiyat planlama adımlarında yönlendirmek için form doğrulama, geri bildirim sistemleri ve dinamik modallar tasarladım.",
+                    "Durum yönetimi ve yeniden kullanılabilir desenler için Vuex kullanarak performans optimize edilmiş bileşenler geliştirdim.",
+                    "API ve kullanıcı tarafı doğrulamaları için gerçek zamanlı geri bildirim ve hata çözümü mesajları entegre ederek kullanıcı deneyimini geliştirdim.",
+                    "Tacirlerle kullanılabilirlik testi oturumları düzenledim ve UI/UX iyileştirmeleri için geri bildirim topladım."
+                ],
+                "demoLink": "https://hepsilojistik.hepsiburada.com/",
+                "demoLinkLabel": "Projeyi İncele"
+            },
+            {
+                "id": "project3",
+                "image": "assets/images/zes.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_3_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_3_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Ticari, operasyon, finans ve muhasebe ekipleri tarafından tüketimi takip etmek, gelir iadelerini yönetmek, faturaları onaylamak ve detaylı raporlar oluşturmak için kullanılan dahili bir platform olan ZES Operasyon'u tasarladım ve uyguladım.",
+                    "Ortakların fatura kesmelerini, hesap faaliyetlerini izlemelerini ve detaylı ortaklık ilişkilerini güvenli ve kullanıcı dostu bir ortamda görüntülemelerini sağlayan müşteri odaklı bir çözüm olan İş Ortağı Portalı'nı geliştirdim.",
+                    "Karmaşık iş mantığını REST API'ler aracılığıyla backend .NET Core hizmetleriyle entegre ettim, platformlar arası veri tutarlılığı ve gerçek zamanlı güncellemeler sağladım.",
+                    "Cihazlar arasında kullanılabilirlik ve erişilebilirliğe odaklanarak duyarlı ve modüler Angular bileşenleri uyguladım.",
+                    "Gereksinimleri toplamak ve farklı rollere göre uyarlanmış kullanıcı deneyimini iyileştirmek için farklı fonksiyonel ekiplerle yakın işbirliği yaptım.",
+                    "Rol tabanlı erişim kontrolü ve veri koruma önlemleri uygulayarak uygulama güvenliğini artırdım.",
+                    "Tembel yükleme, verimli durum yönetimi ve kod bölme yoluyla frontend performansını optimize ettim."
+                ],
+                "demoLink": "https://partneroperations.zes.net/",
+                "demoLinkLabel": "Operasyon İncele",
+                "demoAdminLink": "https://partnerportal.zes.net/",
+                "demoAdminLinkLabel": "Partner İncele"
+            },
+            {
+                "id": "project4",
+                "image": "assets/images/runflow.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_4_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_4_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Hem temizlikçiler hem de müşteriler için kolayca eşleşme bulmaları, temizlik randevuları planlamaları ve oturuma özel notlar eklemeleri için kullanıcı dostu arayüzler uyguladım.",
+                    "Fiziksel temizliğin başlamasını ve ödeme sürecini tetikleyen, sorunsuz uçtan uca bir hizmet akışı garanti eden randevu yaşam döngüsü yönetimini entegre ettim.",
+                    "Randevu durumu değişiklikleri, iptaller ve ödemelerle ilgili gerçek zamanlı güncellemeler ve bildirimler sağladım.",
+                    "Veri bütünlüğünü sağlamak için API'leri güvenli ve güvenilir bir şekilde tüketmek üzere backend geliştiricilerle yakın çalıştım.",
+                    "Masaüstü ve mobil cihazlarda mükemmel kullanılabilirlik için duyarlı Angular bileşenleri tasarladım ve optimize ettim.",
+                    "Kullanıcı tutma oranını ve etkileşimi artırmak için erişilebilirlik ve performans optimizasyonlarına odaklandım.",
+                    "Kullanıcı geri bildirimleri ve analizlere dayanarak özellikleri yinelemeli olarak geliştirmek için ürün sahipleriyle işbirliği yaptım."
+                ]
+            },
+            {
+                "id": "project5",
+                "image": "assets/images/runflow.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_5_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_5_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Kullanıcılara kişiselleştirilmiş CV değerlendirmeleri ve geliştirme önerileri sunmak için etkileşimli bir yapay zeka sohbet robotu tasarladım ve uyguladım.",
+                    "CV içeriğinin doğal dil anlama ve semantik analizi için son teknoloji makine öğrenimi modellerini entegre ettim.",
+                    "Sorunsuz kullanıcı deneyimi ve gerçek zamanlı etkileşime odaklanarak Angular kullanarak modüler ve ölçeklenebilir bir ön uç geliştirdim.",
+                    "Veri işleme, model çıkarımı ve kullanıcı yönetimi için güvenli REST API'leri oluşturmak üzere arka uç ekipleriyle işbirliği yaptım.",
+                    "Kullanıcıların CV yüklemelerine, ayrıntılı yorumlar almalarına ve zaman içindeki iyileştirme önerilerini takip etmelerine olanak tanıyan özellikler uyguladım.",
+                    "Verimli veri işlem hatları ve önbellekleme mekanizmaları kullanarak performansı ve yanıt sürelerini optimize ettim.",
+                    "Veri gizliliği düzenlemelerine uygunluğu sağladım ve kullanıcı bilgilerini korumak için rol tabanlı erişim kontrolleri uyguladım."
+                ]
+            },
+            {
+                "id": "project6",
+                "image": "assets/images/greyfood.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_6_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_6_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Ölçeklenebilir ve genişletilebilir bir mimariye sahip ürün katalogları, kullanıcı rolleri, konfigürasyonlar ve promosyon kampanyalarının yönetimini sağlayan dinamik bir Yönetici Paneli geliştirdim.",
+                    "Dinamik ürün listelemeleri, promosyon kuponları, jeton tabanlı sadakat sistemleri ve üyelik paketleri içeren, hem B2B hem de B2C müşterilerine hitap eden çok yönlü bir E-ticaret platformu oluşturdum.",
+                    "Hava, deniz, kara taşımacılığı ve depo teslimatı dahil olmak üzere karmaşık teslimat lojistiği iş akışlarını tasarladım; buna nakliye yöntemlerine göre kutu ve paletler için gerçek zamanlı paketleme optimizasyonu da dahildir.",
+                    "Güvenli ödeme ağ geçitleri entegre ederek güvenilir işlem süreçleri ve sorunsuz kullanıcı ödeme deneyimleri sağladım.",
+                    "RESTful API'leri tüketmek ve iş mantığı ile veri akışını senkronize etmek için arka uç ekipleriyle yakın işbirliği yaptım.",
+                    "Farklı kullanıcı türleri için özel olarak tasarlanmış duyarlı, erişilebilir ve performans optimize edilmiş kullanıcı arayüzü bileşenleri oluşturmaya odaklandım.",
+                    "Gelişen iş ihtiyaçlarına göre özellikleri uyarlamak için paydaşlarla sürekli geri bildirim döngüleri uyguladım."
+                ],
+                "demoLink": "https://shop.greyfood.com/",
+                "demoLinkLabel": "Alışveriş İncele",
+                "demoAdminLink": "https://shopadmin.greyfood.com/",
+                "demoAdminLinkLabel": "Admin İncele"
+            },
+            {
+                "id": "project7",
+                "image": "assets/images/greyfood.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_7_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_7_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "Firebase",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Teklif sunma, teklifleri takip etme ve satın alma iş akışlarını yönetmek için Angular kullanarak kullanıcı dostu bir arayüz tasarladım ve uyguladım.",
+                    "Teklif değerlendirmelerini, tedarikçi iletişimlerini ve satın alma siparişi oluşturmayı verimli bir şekilde ele almak için arka uç hizmetlerini entegre ettim.",
+                    "Alıcılar, tedarikçiler ve yöneticiler için güvenli operasyonlar sağlayan rol tabanlı erişim kontrolünü uyguladım.",
+                    "Teklif verme süreci boyunca paydaşları bilgilendirmek için gerçek zamanlı bildirim ve durum takip özelliklerini geliştirdim.",
+                    "Teknik çözümleri karmaşık endüstriyel satın alma gereksinimleriyle uyumlu hale getirmek için farklı fonksiyonel ekiplerle işbirliği yaptım.",
+                    "Frontend performansını optimize ettim ve masaüstü ve mobil cihazlarda sorunsuz kullanım için duyarlı tasarım sağladım.",
+                    "Uygulama yaşam döngüsü boyunca ilgili endüstriyel ve veri güvenliği standartlarına uygunluğu sürdürdüm."
+                ]
+            },
+            {
+                "id": "project8",
+                "image": "assets/images/hacibayram.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_8_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_8_DESC",
+                "technologies": [
+                    ".NET",
+                    "C#",
+                    "Entity Framework",
+                    "Angular",
+                    "Typescript"
+                ],
+                "contributionsKeys": [
+                    "Öğrenci Bilgi Sistemi, YÖKSİS, Akademik Personel Bilgi Sistemi ve Kütüphane Rezervasyon Sistemi gibi kritik dahili sistemlerle sorunsuz veri akışı sağlamak için entegrasyonlar tasarladım ve uyguladım.",
+                    "Birden fazla alanda dinamik sayfa ve içerik yönetimini kolaylaştıran modüler, yeniden kullanılabilir Angular bileşenleri geliştirdim.",
+                    "Veri senkronizasyonu ve içerik teslimi için REST API'leri açığa çıkarmak ve tüketmek üzere arka uç ekipleriyle işbirliği yaptım.",
+                    "Frontend mimarisi ve kod standartlarında en iyi uygulamaları uygulayarak sistem ölçeklenebilirliğini ve sürdürülebilirliğini artırdım.",
+                    "Çeşitli cihazlarda tutarlı kullanıcı deneyimi için tarayıcılar arası uyumluluk ve duyarlılık sağladım."
+                ],
+                "demoLink": "https://hacibayram.edu.tr/",
+                "demoLinkLabel": "Projeyi İncele"
+            },
+            {
+                "id": "project9",
+                "image": "assets/images/meydan.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_9_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_9_DESC",
+                "technologies": [
+                    ".NET",
+                    "C#",
+                    "Entity Framework",
+                    "Angular",
+                    "Typescript"
+                ],
+                "contributionsKeys": [
+                    "Dinamik bir akademik sosyal ortamı teşvik etmek için etkinlik oluşturma, içerik etkileşimi ve topluluk katılımını destekleyen özellikler uyguladım.",
+                    "Tutarlı kullanıcı deneyimi ve paylaşılan veri erişimi sağlamak için üniversitenin web portalı ile sorunsuz entegrasyon geliştirdim.",
+                    "Platform işlevlerini kullanıcı ihtiyaçları ve kurumsal hedeflerle uyumlu hale getirmek için farklı fonksiyonel ekiplerle işbirliği yaptım.",
+                    "Performans, erişilebilirlik ve mobil duyarlılık sağlamak için Angular kullanarak ön uç bileşenlerini optimize ettim.",
+                    "Platform benimsenmesini ve elde tutmayı artırmak için kullanıcı geri bildirimleri ve analizlere dayalı sürekli iyileştirmeler yaptım."
+                ],
+                "demoLink": "https://meydan.hacibayram.edu.tr/",
+                "demoLinkLabel": "Projeyi İncele"
+            },
+            {
+                "id": "project10",
+                "image": "assets/images/lms.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_10_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_10_DESC",
+                "technologies": [
+                    ".NET",
+                    "C#",
+                    "Entity Framework",
+                    "Angular",
+                    "Typescript"
+                ],
+                "contributionsKeys": [
+                    "Sınavlar, ödevler, ders materyalleri ve ders yönetimi gibi işlevsellikler sağlayan Portal Modülü'nü Angular ile geliştirdim.",
+                    "Ulusal Video Konferans Sistemi (WebRTC) ve Zoom ile entegre, etkileşimli gerçek zamanlı oturumlar sağlayan Canlı Ders Modülü'nü uyguladım.",
+                    "Koordineli backend ve frontend geliştirme yoluyla modüller arasında sorunsuz entegrasyon ve veri tutarlılığı sağladım.",
+                    "Gereksinim analizi, tasarım, geliştirme, test ve dağıtım aşamalarında aktif olarak yer aldım.",
+                    "Öğrenci katılımını artırmak için UI/UX tasarımı, erişilebilirlik ve performans optimizasyonunda en iyi uygulamaları uyguladım."
+                ],
+                "demoLink": "https://bilger.hacibayram.edu.tr/",
+                "demoLinkLabel": "Projeyi İncele"
+            },
+            {
+                "id": "project11",
+                "image": "assets/images/video-conference.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_11_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_11_DESC",
+                "technologies": [
+                    "WebRTC",
+                    "SignalR",
+                    ".NET",
+                    "C#",
+                    "Angular",
+                    "Typescript"
+                ],
+                "contributionsKeys": [
+                    "Video akış verimliliğini ve ölçeklenebilirliğini optimize etmek için Mesh ve Seçici İletim Birimi (SFU) topolojilerini tasarladım ve uyguladım.",
+                    "Video Yönetim Sunucusu, Video Kayıt Sunucusu, Uygulama Sunucusu ve tarayıcı istemcileri dahil olmak üzere çekirdek sistem bileşenlerini geliştirdim.",
+                    "Gerçek zamanlı iletişim performansına, sorunsuz kullanıcı deneyimine ve çeşitli istemci ortamlarında uyumluluğa odaklandım.",
+                    "Sağlam bir mimari ve etkili kaynak yönetimi sağlamak için çok disiplinli ekiplerle işbirliği yaptım.",
+                    "Yoğun yük senaryolarında sistem güvenilirliğini garanti etmek için test ve dağıtım aşamalarına katıldım."
+                ],
+                "demoLink": "https://argusteknoloji.com/anasayfa/vidi",
+                "demoLinkLabel": "Projeyi İncele"
+            }
+        ],
+        "PROJECT_1_TITLE": "Operations Management Sys.",
+        "PROJECT_1_DESC": "Hepsiburada'nın lojistik ve operasyon ekipleri için depo iş akışlarını, paket elleçlemesini ve teslimat koordinasyonunu yönetmek amacıyla tasarlanmış sağlam bir dahili sistem. Uygulama güvenli bir ağa dağıtıldı ve yetkili personel tarafından VPN aracılığıyla erişildi.",
+        "PROJECT_2_TITLE": "Shipment Planning Platform",
+        "PROJECT_2_DESC": "Hepsiburada'nın iş ortakları için sevkiyat programlarını düzenlemelerini, paket durumunu takip etmelerini ve self-servis arayüzü aracılığıyla teslimat süreçlerini düzene koymalarını sağlamak üzere geliştirilmiş ölçeklenebilir, hariciye açık bir web platformu.",
+        "PROJECT_3_TITLE": "ZES Operation & Partner Portal",
+        "PROJECT_3_DESC": "ZES Zorlu için iki kritik uygulama geliştirildi; bu uygulamalar, dahili ekipleri ve harici iş ortaklarını düzenli operasyonel iş akışları ve müşteri self-servis işlevsellikleri aracılığıyla güçlendirdi. Platformlar, ölçeklenebilir ve sürdürülebilir mimariler sağlamak için frontend'de Angular ve backend'de .NET Core'u kullandı.",
+        "PROJECT_4_TITLE": "Runflow Cleaning App.",
+        "PROJECT_4_DESC": "Profesyonel temizlikçileri ev sahipleriyle buluşturan, randevu planlama, iletişim ve ödemeleri kolaylaştıran bir müşteri ve hizmet sağlayıcıya yönelik platform geliştirildi. Uygulama, sezgisel ve sorunsuz bir kullanıcı deneyimi sağlamak amacıyla frontend için Angular ile oluşturuldu.",
+        "PROJECT_5_TITLE": "Metech AI – AI-Powered Chatbot.",
+        "PROJECT_5_DESC": "Kullanıcılara CV'leri akıllı geri bildirimlerle analiz etme ve inceleme konusunda yardımcı olmak üzere tasarlanmış, işe alım ve kariyer geliştirme süreçlerini iyileştirmek için gelişmiş doğal dil işleme ve sohbet robotu teknolojilerinden yararlanan yapay zeka destekli bir uygulama geliştirildi.",
+        "PROJECT_6_TITLE": "Greyfood Shopping App",
+        "PROJECT_6_DESC": "Greyfood için toptancıları, distribütörleri, zincir marketleri ve büfeleri B2B ve B2C modellerinde destekleyen kapsamlı iki parçalı bir uygulama paketinin geliştirilmesine öncülük edildi. Frontend Angular uygulamaları, sorunsuz kullanıcı deneyimleri ve sağlam operasyonel özellikler sunmak için .NET Core backend ile sıkı bir şekilde entegre edildi.",
+        "PROJECT_7_TITLE": "CNC Bid",
+        "PROJECT_7_DESC": "Büyük ölçekli CNC makineleri için teklif verme, müzakere ve tedarik süreçlerini kolaylaştıran kapsamlı bir uygulama geliştirildi. Platform, endüstriyel müşteriler için tedarikçi etkileşimlerini ve satın alma yönetimini düzene koymaktadır.",
+        "PROJECT_8_TITLE": "Content Management Sys.",
+        "PROJECT_8_DESC": "Frontend için Angular ve backend için .NET Core kullanarak modern bir CMS geliştirilmesine katkıda bulunuldu. Sistem, çeşitli üniversite bölümlerine özel olarak dinamik olarak yapılandırılabilir modüller aracılığıyla sınırsız web sitesi, sayfa ve gönderi desteği sağlayarak esnek ve yeniden kullanılabilir içerik oluşturulmasına olanak tanıdı.",
+        "PROJECT_9_TITLE": "MEYDAN",
+        "PROJECT_9_DESC": "Üniversite topluluklarına özel olarak tasarlanmış, kullanıcıların etkinlik gönderileri oluşturmasına, içeriklerle beğeni aracılığıyla etkileşim kurmasına ve topluluk faaliyetleri hakkında güncel kalmasına olanak tanıyan bir sosyal medya platformu olan MEYDAN'ın geliştirilmesinde yer alındı.",
+        "PROJECT_10_TITLE": "Learning Management Sys.",
+        "PROJECT_10_DESC": "Uzaktan eğitimi destekleyen, Portal Modülü ve ulusal ve üçüncü taraf video konferans sistemleriyle entegre Canlı Ders Modülü içeren bir Öğrenim Yönetim Sisteminin tüm yaşam döngüsü geliştirmesine katkıda bulunuldu.",
+        "PROJECT_11_TITLE": "National Video Conference Sys.",
+        "PROJECT_11_DESC": "Ölçeklenebilir ve güvenilir gerçek zamanlı iletişim çözümleri sağlamak üzere tasarlanmış, WebRTC teknolojilerini kullanan yüksek performanslı bir Ulusal Video Konferans Sisteminin geliştirilmesine aktif olarak katkıda bulunuldu."
+    },
+    "WORKS_SECTION": {
+        "TITLE": "Çalışmalarım",
+        "WORK_ITEMS": [
+            {
+                "id": "work1",
+                "image": "assets/images/tactical.jpg",
+                "titleKey": "WORKS_SECTION.WORK_1_TITLE",
+                "descriptionKey": "WORKS_SECTION.WORK_1_DESC",
+                "technologies": [
+                    "Angular",
+                    "HTML",
+                    "CSS",
+                    "TypeScript",
+                    "Javascript",
+                    "Yapay Zeka"
+                ],
+                "demoLink": "https://tactical.netlify.app/",
+                "demoLinkLabel": "Demo"
+            },
+            {
+                "id": "work2",
+                "image": "assets/images/portfolio.jpg",
+                "titleKey": "WORKS_SECTION.WORK_2_TITLE",
+                "descriptionKey": "WORKS_SECTION.WORK_2_DESC",
+                "technologies": [
+                    "Angular",
+                    "HTML",
+                    "CSS",
+                    "TypeScript",
+                    "Javascript",
+                    "Yapay Zeka"
+                ],
+                "demoLink": "https://mustafagonen.netlify.app/",
+                "demoLinkLabel": "Demo"
+            }
+        ],
+        "WORK_1_TITLE": "Taktical",
+        "WORK_1_DESC": "Kullanıcıların özel kadrolar oluşturmasına, oyuncu pozisyonlarını ayarlamasına ve stratejik dizilişleri etkileşimli olarak tasarlamasına olanak tanıyan bir futbol kadro oluşturma ve taktik görselleştirme platformu geliştirdim.",
+        "WORK_2_TITLE": "Portfolyom",
+        "WORK_2_DESC": "Portfolyo web sitem, en son frontend teknolojileri kullanılarak modern, duyarlı bir tasarımla inşa edilmiş profesyonel deneyimimi, projelerimi ve teknik uzmanlığımı sergilemektedir."
+    },
+    "CONTACT_SECTION": {
+        "TITLE": "Benimle İletişime Geçin",
+        "SUBTITLE": "Projeleriniz mi var? Sadece merhaba mı demek istiyorsunuz? Bana ulaşmaktan çekinmeyin.",
+        "FORM_TITLE": "Bana Bir Mesaj Gönderin",
+        "NAME_LABEL": "Adınız",
+        "NAME_PLACEHOLDER": "Adınızı girin",
+        "EMAIL_LABEL": "E-posta Adresiniz",
+        "EMAIL_PLACEHOLDER": "E-posta adresinizi girin",
+        "SUBJECT_LABEL": "Konu",
+        "SUBJECT_PLACEHOLDER": "Mesajınızın konusu",
+        "MESSAGE_LABEL": "Mesajınız",
+        "MESSAGE_PLACEHOLDER": "Mesajınızı buraya yazın...",
+        "SEND_BUTTON": "Mesajı Gönder",
+        "SENDING_MESSAGE": "Gönderiliyor...",
+        "SUCCESS_MESSAGE": "Mesajınız başarıyla gönderildi! Teşekkür ederiz.",
+        "ERROR_MESSAGE": "Mesajınızı gönderirken bir hata oluştu. Lütfen daha sonra tekrar deneyin veya doğrudan iletişime geçin.",
+        "REQUIRED_ERROR": "Bu alan zorunludur.",
+        "EMAIL_INVALID_ERROR": "Geçerli bir e-posta adresi girin.",
+        "OTHER_CONTACT_TITLE": "Diğer İletişim Kanalları",
+        "EMAIL_ADDRESS_LABEL": "E-posta:",
+        "PHONE_NUMBER_LABEL": "Telefon:",
+        "LOCATION_LABEL": "Konum:",
+        "SOCIAL_MEDIA_TITLE": "Beni Takip Edin",
+        "LINKEDIN_TEXT": "LinkedIn Profilim",
+        "GITHUB_TEXT": "GitHub Profilim",
+        "TWITTER_TEXT": "Twitter Profilim",
+        "MAP_TITLE": "Konumum"
+    }
+}

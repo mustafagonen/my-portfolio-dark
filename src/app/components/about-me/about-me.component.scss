@@ -1,0 +1,342 @@
+/* Değişkenler (styles.scss veya bir değişken dosyasında tanımlı varsayılmıştır) */
+$primary-dark-bg: #111111;
+$secondary-dark-bg: #1C1C1C;
+$text-light: #E0E0E0;
+$text-white: #FFFFFF;
+$accent-green: #00C0A6;
+$accent-green-dark: #00A68A;
+$border-radius-lg: 12px;
+$border-radius-md: 8px;
+
+:host {
+    display: block !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.about-section.modern-v2 {
+    background-color: $secondary-dark-bg; // Daha koyu bir arka plan, Hero'dan ayırt etmek için
+    color: $text-light;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    // Hero'daki gibi hafif grid deseni (isteğe bağlı)
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.05;
+        z-index: 0;
+    }
+}
+
+.about-container.modern-container-v2 {
+    max-width: 1200px;
+    width: 100%;
+    z-index: 1; // Gridin üzerinde olması için
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.section-title.modern-title-v2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: $text-white;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative; // Alt çizgi için
+
+    &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: $accent-green;
+        margin: 15px auto 0 auto;
+        border-radius: 2px;
+    }
+}
+
+.about-intro.modern-intro-v2 {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px;
+
+    .intro-description.modern-description-v2 {
+        font-size: 15px;
+        line-height: 1.6;
+        color: lighten($text-light, 5%);
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about-content.modern-content-v2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+
+    @media (min-width: 768px) {
+        flex-direction: row; // Büyük ekranlarda yan yana
+        justify-content: center;
+        align-items: flex-start; // Dikey hizalamayı ayarla
+    }
+}
+
+// Opsiyonel: Eğer About içinde ayrı bir görsel kullanacaksanız
+.about-image-wrapper.modern-image-wrapper-v2 {
+    flex: 0 0 400px; // Resim için sabit genişlik
+    margin-right: 60px;
+    position: relative;
+    border-radius: $border-radius-md;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    .about-image.modern-image-v2 {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: $border-radius-md;
+    }
+
+    @media (max-width: 767px) {
+        margin-right: 0;
+        margin-bottom: 40px;
+        max-width: 80%;
+    }
+}
+
+
+.timeline-wrapper.modern-timeline-wrapper-v2 {
+    flex: 1; // Kalan alanı doldurur
+    max-width: 700px; // Maksimum genişlik sınırlaması
+    width: 100%;
+
+    @media (min-width: 768px) {
+        margin-left: 60px; // Resimden sonra boşluk
+    }
+
+    @media (max-width: 767px) {
+        margin-left: 0;
+    }
+}
+
+.timeline-heading.modern-timeline-heading-v2 {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: $text-white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.timeline.modern-timeline-v2 {
+    position: relative;
+    padding-left: 40px; // Dikey çizgi ve noktalar için boşluk
+    margin: 0;
+
+    // Dikey çizgi
+    &::before {
+        content: '';
+        position: absolute;
+        left: 18px; // Noktaların ortasına denk gelmeli
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: rgba($accent-green, 0.4);
+        border-radius: 2px;
+    }
+}
+
+.timeline-item.modern-timeline-item-v2 {
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 10px; // İçerik ile bir sonraki nokta arasındaki boşluk
+    opacity: 0; // Başlangıçta gizle
+    transform: translateY(20px); // Hafif aşağıdan başla
+    animation: fadeInFromBottom 0.8s ease-out forwards;
+
+    // Her öğeye farklı bir gecikme vererek sırayla görünmelerini sağla
+    @for $i from 1 through 10 {
+
+        // Yeterli sayıda öğe için (10'u artırabilirsiniz)
+        &:nth-child(#{$i}) {
+            animation-delay: #{(($i - 1) * 0.3) + 0.3}s; // 0.5s genel başlangıç gecikmesi
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline-dot.modern-timeline-dot-v2 {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 13px);
+    width: 18px;
+    height: 18px;
+    background-color: $accent-green;
+    border-radius: 50%;
+    border: 4px solid $secondary-dark-bg; // Arka planla aynı renkte çerçeve
+    box-shadow: 0 0 0 3px rgba($accent-green, 0.3); // Hafif ışıma efekti
+    z-index: 1;
+    animation: pulseDot 2s infinite alternate ease-in-out; // Yanıp sönme
+}
+
+.timeline-content.modern-timeline-content-v2 {
+    background-color: $primary-dark-bg; // Kart arka planı
+    padding: 25px;
+    border-radius: $border-radius-md;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    margin-left: 20px; // Noktanın sağında kalması için
+    position: relative;
+
+    // İçerik kartının noktaya doğru küçük oku
+    &::before {
+        content: '';
+        position: absolute;
+        left: -10px; // Sol kenara hizala
+        top: 10px; // Yukarıdan biraz aşağı
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid $primary-dark-bg; // Kartın rengiyle aynı ok
+    }
+}
+
+.timeline-date.modern-timeline-date-v2 {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: $accent-green;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.timeline-title.modern-timeline-title-v2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: $text-white;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.timeline-description.modern-timeline-description-v2 {
+    font-size: 1em;
+    line-height: 1.6;
+    color: $text-light;
+}
+
+// Anahtar Kare Animasyonları
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseDot {
+    0% {
+        box-shadow: 0 0 0 0px rgba($accent-green, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba($accent-green, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0px rgba($accent-green, 0.5);
+    }
+}
+
+// Responsive Ayarlamalar
+@media (max-width: 767px) {
+    .about-section.modern-v2 {
+        padding: 80px 15px;
+    }
+
+    .section-title.modern-title-v2 {
+        font-size: 2.8em;
+        margin-bottom: 30px;
+    }
+
+    .about-intro.modern-intro-v2 {
+        .intro-description.modern-description-v2 {
+            font-size: 1em;
+        }
+    }
+
+    .about-content.modern-content-v2 {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .timeline-wrapper.modern-timeline-wrapper-v2 {
+        max-width: 100%; // Mobil görünümde tam genişlik
+    }
+
+    .timeline.modern-timeline-v2 {
+        padding-left: 30px; // Mobil için biraz daha az boşluk
+
+        &::before {
+            left: 14px;
+            width: 2px;
+        }
+    }
+
+    .timeline-dot.modern-timeline-dot-v2 {
+        width: 15px;
+        height: 15px;
+        border-width: 3px;
+        left: -1px; // Dikey çizgiye daha yakın
+    }
+
+    .timeline-content.modern-timeline-content-v2 {
+        padding: 20px;
+        margin-left: 15px; // Mobil için daha az boşluk
+
+        &::before {
+            left: -8px;
+            border-right-width: 8px;
+        }
+    }
+
+    .timeline-title.modern-timeline-title-v2 {
+        font-size: 1.3em;
+    }
+
+    .timeline-date.modern-timeline-date-v2 {
+        font-size: 0.85em;
+    }
+
+    .timeline-description.modern-timeline-description-v2 {
+        font-size: 0.95em;
+    }
+}

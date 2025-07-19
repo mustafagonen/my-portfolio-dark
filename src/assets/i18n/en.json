@@ -1,0 +1,513 @@
+{
+    "NAVBAR": {
+        "ABOUT": "About",
+        "SKILLS": "Skills",
+        "PROJECTS": "Projects",
+        "WORKS": "Works",
+        "CONTACT": "Contact",
+        "DOWNLOAD_CV": "Download CV"
+    },
+    "HERO": {
+        "GREETING_PART1": "Hello, I am ",
+        "NAME": "Mustafa Gonen",
+        "POSITION": "Frontend Developer",
+        "INTRO_P1": "With over 6 years of Frontend Development experience, I excel in Angular, Vue, TypeScript and optimizing web applications. Interested in contributing to innovative software solutions with a focus on high performance as a dedicated Software Developer. I am on track to complete my undergraduate degree in the Computer Engineering department of METU by the end of this year.",
+        "CALL_TO_ACTION_PROJECTS": "View My Projects",
+        "CALL_TO_ACTION_CONTACT": "Get In Touch"
+    },
+    "ABOUT_SECTION": {
+        "TITLE": "About Me",
+        "INTRO_P1": "As a Frontend Developer, my greatest passion lies in designing and developing user-centric and creative web experiences. My curiosity for technology and my constant desire to learn continually drive me forward in this dynamic field.",
+        "INTRO_P2": "Throughout my career journey, with the experiences and projects I've gained, I aim to merge aesthetics and functionality in the digital world. I focus on developing accessible and high-performance applications by placing user experience at the core of my work.",
+        "TIMELINE_HEADING": "My Career Journey",
+        "TIMELINE_ITEM_1_DATE": "Hepsiburada (2022 - 2025)",
+        "TIMELINE_ITEM_1_TITLE": "Software Developer",
+        "TIMELINE_ITEM_1_DESC": "I led the development of high-performance front-end solutions using Vue.js and Angular, collaborated with backend teams to optimize data flow, built reusable components, and integrated RESTful APIs to enhance user experience and reduce errors.",
+        "TIMELINE_ITEM_2_DATE": "Me Tech Digital (2022 - 2023)",
+        "TIMELINE_ITEM_2_TITLE": "Frontend Developer",
+        "TIMELINE_ITEM_2_DESC": "I led the development of multiple Angular-based user interfaces for international projects, collaborating with backend and UX/UI teams to deliver responsive, cross-browser solutions, optimize performance, and enhance code quality through reviews and reusable components",
+        "TIMELINE_ITEM_3_DATE": "Argus Technology (2019 - 2022)",
+        "TIMELINE_ITEM_3_TITLE": "Full Stack Developer ",
+        "TIMELINE_ITEM_3_DESC": "I contributed to a modern CMS by developing dynamic Angular UI components, implementing efficient video streaming architectures with WebRTC and WebSocket, improving collaboration through Git-based version control, and optimizing code quality with HTML5/CSS3 standards to reduce troubleshooting and development time.",
+        "TIMELINE_ITEM_4_DATE": "Argus Technology (2019)",
+        "TIMELINE_ITEM_4_TITLE": "Computer Engineering Intern",
+        "TIMELINE_ITEM_4_DESC": "During this internship, I learned the fundamentals of HTML, CSS, and JavaScript, and gained hands-on experience with modern frontend frameworks, particularly Angular.",
+        "TIMELINE_ITEM_5_DATE": "SimBT Inc. Simulation Science and Technologies (2018)",
+        "TIMELINE_ITEM_5_TITLE": "Computer Engineering Intern",
+        "TIMELINE_ITEM_5_DESC": " I contributed to the design and development of a Corporate Information System for the HR department, working on both frontend (HTML, CSS, JavaScript) and backend (.NET/C# with MySQL) using Microsoft Visual Studio.",
+        "TIMELINE_ITEM_6_DATE": "Midde East Technical University (METU - 2017)",
+        "TIMELINE_ITEM_6_TITLE": "University Education",
+        "TIMELINE_ITEM_6_DESC": "Started Bachelor's degree program in Computer Engineering."
+    },
+    "SKILLS_SECTION": {
+        "TITLE": "My Skills",
+        "FRONTEND_TITLE": "Frontend",
+        "BACKEND_TITLE": "Backend",
+        "DATABASES_TITLE": "Databases",
+        "DEVOPS_TITLE": "DevOps & Cloud",
+        "TOOLS_TITLE": "Tools & Others",
+        "NO_SKILLS_AVAILABLE": "Skills not available yet or no skills found.",
+        "SKILL_ITEMS": [
+            {
+                "name": "Angular",
+                "category": "frontend",
+                "iconClass": "fab fa-angular"
+            },
+            {
+                "name": "Vue.js",
+                "category": "frontend",
+                "iconClass": "fab fa-vuejs"
+            },
+            {
+                "name": "TypeScript",
+                "category": "frontend",
+                "iconClass": "fab fa-js-square"
+            },
+            {
+                "name": "JavaScript",
+                "category": "frontend",
+                "iconClass": "fab fa-js"
+            },
+            {
+                "name": "HTML",
+                "category": "frontend",
+                "iconClass": "fab fa-html5"
+            },
+            {
+                "name": "CSS",
+                "category": "frontend",
+                "iconClass": "fab fa-css3-alt"
+            },
+            {
+                "name": "TailwindCSS",
+                "category": "frontend",
+                "iconClass": "fas fa-wind"
+            },
+            {
+                "name": "Node.js",
+                "category": "backend",
+                "iconClass": "fab fa-node-js"
+            },
+            {
+                "name": ".NET",
+                "category": "backend",
+                "iconClass": "fas fa-dot-circle"
+            },
+            {
+                "name": "C#",
+                "category": "backend",
+                "iconClass": "fas fa-hashtag"
+            },
+            {
+                "name": "MySQL",
+                "category": "databases",
+                "iconClass": "fas fa-database"
+            },
+            {
+                "name": "Entity Framework",
+                "category": "backend",
+                "iconClass": "fas fa-database"
+            },
+            {
+                "name": "MSSQL",
+                "category": "databases",
+                "iconClass": "fas fa-server"
+            },
+            {
+                "name": "Git",
+                "category": "devops",
+                "iconClass": "fab fa-git-alt"
+            },
+            {
+                "name": "GitLab",
+                "category": "devops",
+                "iconClass": "fab fa-gitlab"
+            },
+            {
+                "name": "Linux",
+                "category": "devops",
+                "iconClass": "fab fa-linux"
+            },
+            {
+                "name": "Figma",
+                "category": "tools",
+                "iconClass": "fab fa-figma"
+            },
+            {
+                "name": "Zeplin",
+                "category": "tools",
+                "iconClass": "fas fa-drafting-compass"
+            },
+            {
+                "name": "Jira",
+                "category": "tools",
+                "iconClass": "fab fa-jira"
+            },
+            {
+                "name": "npm",
+                "category": "tools",
+                "iconClass": "fab fa-npm"
+            },
+            {
+                "name": "Yarn",
+                "category": "tools",
+                "iconClass": "fab fa-yarn"
+            }
+        ]
+    },
+    "PROJECTS_SECTION": {
+        "TITLE": "My Projects",
+        "VIEWLIVE": "View Liew Project",
+        "BACK_TO_PROJECTS": "Back to Projects",
+        "NO_DETAIL_IMAGE_TEXT": "No Detail Image Available",
+        "CHALLENGES_TITLE": "Challenges Faced",
+        "SOLUTION_TITLE": "Solution",
+        "LEARNINGS_TITLE": "Learnings",
+        "TECHNOLOGIES_USED": "Technologies Used",
+        "PROJECT_NOT_FOUND": "Project not found.",
+        "CONTRIBUTIONS_TITLE_KEY": "Contributions",
+        "PROJECT_ITEMS": [
+            {
+                "id": "project1",
+                "image": "assets/images/hepsilojistik.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_1_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_1_DESC",
+                "technologies": [
+                    "Angular",
+                    "TypeScript",
+                    "Node.js",
+                    "Javascript",
+                    "Express.js"
+                ],
+                "contributionsKeys": [
+                    "Designed and implemented the frontend using Angular, focusing on modularity, reusability, and maintainability.",
+                    "Integrated dynamic dashboards, real-time status tracking, and task-based UI components tailored to various warehouse roles.",
+                    "Built custom directives and smart form components to manage inventory movements, shipment preparation, and delivery routing.",
+                    "Established secure role-based access control and conditional UI rendering for different user groups and permission levels.",
+                    "Worked in close coordination with .NET Core and PHP backend teams to consume REST APIs and align data flow logic.",
+                    "Led UI architecture decisions, established coding standards, and mentored junior developers during critical phases of the project.",
+                    "Improved system responsiveness and startup time by implementing lazy-loading strategies and state optimization."
+                ],
+                "demoLink": "https://www.hepsiburada.com/hepsilojistik",
+                "demoLinkLabel": "View Live Project (VPN Required)"
+            },
+            {
+                "id": "project2",
+                "image": "assets/images/merchant.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_2_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_2_DESC",
+                "technologies": [
+                    "Vue.js",
+                    "Node.js",
+                    "Javascript",
+                    "Express.js"
+                ],
+                "contributionsKeys": [
+                    "Built the entire frontend with Vue.js, delivering a smooth and modern single-page application experience.",
+                    "Implemented complex UI flows including shipment scheduling, label generation, and capacity planning interfaces.",
+                    "Focused on responsive and mobile-first design to ensure accessibility across various device sizes.",
+                    "Designed form validations, feedback systems, and dynamic modals to guide users through shipment planning steps.",
+                    "Developed performance-optimized components using Vuex for state management and reusable patterns.",
+                    "Enhanced UX by integrating real-time feedback and error resolution messaging for API and user-side validations.",
+                    "Conducted usability testing sessions with merchants and collected feedback for UI/UX refinements."
+                ],
+                "demoLink": "https://hepsilojistik.hepsiburada.com/",
+                "demoLinkLabel": "View Live Project"
+            },
+            {
+                "id": "project3",
+                "image": "assets/images/zes.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_3_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_3_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Designed and implemented ZES Operation, an internal platform used by commercial, operations, finance, and accounting teams to track consumption, manage income returns, approve invoices, and generate detailed reports.",
+                    "Developed Partner Portal, a customer-facing solution that enables partners to issue invoices, monitor account activities, and view detailed partner relationships in a secure and user-friendly environment.",
+                    "Integrated complex business logic with backend .NET Core services via REST APIs, ensuring data consistency and real-time updates across platforms.",
+                    "Implemented responsive and modular Angular components focusing on usability and accessibility across devices.",
+                    "Collaborated closely with cross-functional teams to gather requirements and refine user experience tailored to diverse roles.",
+                    "Enhanced application security by implementing role-based access control and data protection measures.",
+                    "Optimized frontend performance through lazy loading, efficient state management, and code splitting."
+                ],
+                "demoLink": "https://partneroperations.zes.net/",
+                "demoLinkLabel": "View Operation",
+                "demoAdminLink": "https://partnerportal.zes.net/",
+                "demoAdminLinkLabel": "View Partner"
+            },
+            {
+                "id": "project4",
+                "image": "assets/images/runflow.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_4_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_4_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Implemented user-friendly interfaces for both cleaners and clients to easily find matches, schedule cleaning appointments, and add session-specific notes.",
+                    "Integrated appointment lifecycle management that triggers the physical cleaning start and payment process, guaranteeing a seamless end-to-end service flow.",
+                    "Ensured real-time updates and notifications regarding appointment status changes, cancellations, and payments.",
+                    "Worked closely with backend developers to consume APIs securely and reliably, ensuring data integrity.",
+                    "Designed and optimized responsive Angular components for excellent usability across desktop and mobile devices.",
+                    "Focused on accessibility and performance optimizations to improve user retention and engagement.",
+                    "Collaborated with product owners to iteratively enhance features based on user feedback and analytics."
+                ]
+            },
+            {
+                "id": "project5",
+                "image": "assets/images/runflow.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_5_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_5_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Designed and implemented a conversational AI chatbot that interacts with users to provide personalized CV evaluations and improvement suggestions.",
+                    "Integrated state-of-the-art machine learning models for natural language understanding and semantic analysis of CV content.",
+                    "Developed a modular and scalable frontend using Angular, focusing on seamless user experience and real-time interaction.",
+                    "Collaborated with backend teams to build secure REST APIs for data processing, model inference, and user management.",
+                    "Implemented features enabling users to upload CVs, receive detailed comments, and track improvement recommendations over time.",
+                    "Optimized performance and response times by utilizing efficient data pipelines and caching mechanisms.",
+                    "Ensured compliance with data privacy regulations and implemented role-based access controls to safeguard user information."
+                ]
+            },
+            {
+                "id": "project6",
+                "image": "assets/images/greyfood.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_6_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_6_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Developed a dynamic Admin Panel allowing the management of product catalogs, user roles, configurations, and promotional campaigns with a scalable and extensible architecture.",
+                    "Built a versatile E-commerce platform catering to both B2B and B2C clients, featuring dynamic product listings, promotional coupons, coin-based loyalty systems, and membership packages.",
+                    "Engineered complex delivery logistics workflows covering air, sea, land transport, and warehouse pick-up, including real-time packaging optimization for boxes and pallets based on shipping methods.",
+                    "Integrated secure payment gateways, ensuring reliable transaction processing and seamless user checkouts.",
+                    "Collaborated closely with backend teams to consume RESTful APIs and synchronize business logic and data flow.",
+                    "Focused on creating responsive, accessible, and performance-optimized UI components tailored for diverse user types.",
+                    "Implemented continuous feedback loops with stakeholders to adapt features based on evolving business needs."
+                ],
+                "demoLink": "https://shop.greyfood.com/",
+                "demoLinkLabel": "View Shopping",
+                "demoAdminLink": "https://shopadmin.greyfood.com/",
+                "demoAdminLinkLabel": "View Admin"
+            },
+            {
+                "id": "project7",
+                "image": "assets/images/greyfood.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_7_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_7_DESC",
+                "technologies": [
+                    "Angular",
+                    "Typescript",
+                    "Firebase",
+                    "HTML",
+                    "SCSS"
+                ],
+                "contributionsKeys": [
+                    "Designed and implemented a user-friendly interface using Angular for submitting bids, tracking offers, and managing procurement workflows.",
+                    "Integrated backend services to handle bid evaluations, supplier communications, and purchase order generation efficiently.",
+                    "Implemented role-based access control ensuring secure operations for buyers, suppliers, and administrators.",
+                    "Developed real-time notification and status tracking features to keep stakeholders informed during the bidding process.",
+                    "Collaborated with cross-functional teams to align technical solutions with complex industrial procurement requirements.",
+                    "Optimized frontend performance and ensured responsive design for seamless use across desktop and mobile devices.",
+                    "Maintained compliance with relevant industrial and data security standards throughout the application lifecycle."
+                ]
+            },
+            {
+                "id": "project8",
+                "image": "assets/images/hacibayram.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_8_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_8_DESC",
+                "technologies": [
+                    ".NET",
+                    "C#",
+                    "Entity Framework",
+                    "Angular",
+                    "Typescript"
+                ],
+                "contributionsKeys": [
+                    "Designed and implemented integrations with critical internal systems such as the Student Information System, YÖKSİS, Academic Personnel Information System, and Library Reservation System to ensure seamless data flow.",
+                    "Developed modular, reusable Angular components facilitating dynamic page and content management across multiple domains.",
+                    "Worked collaboratively with backend teams to expose and consume REST APIs for data synchronization and content delivery.",
+                    "Enhanced system scalability and maintainability by applying best practices in frontend architecture and code standards.",
+                    "Ensured cross-browser compatibility and responsiveness for consistent user experience on various devices."
+                ],
+                "demoLink": "https://hacibayram.edu.tr/",
+                "demoLinkLabel": "View Live Project"
+            },
+            {
+                "id": "project9",
+                "image": "assets/images/meydan.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_9_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_9_DESC",
+                "technologies": [
+                    ".NET",
+                    "C#",
+                    "Entity Framework",
+                    "Angular",
+                    "Typescript"
+                ],
+                "contributionsKeys": [
+                    "Implemented features supporting event creation, content interaction, and community engagement to foster a dynamic academic social environment.",
+                    "Developed seamless integration with the university’s web portal to maintain consistent user experience and shared data access.",
+                    "Collaborated with cross-functional teams to align platform functionalities with user needs and institutional goals.",
+                    "Optimized frontend components using Angular to ensure performance, accessibility, and mobile responsiveness.",
+                    "Engaged in continuous improvements based on user feedback and analytics to increase platform adoption and retention."
+                ],
+                "demoLink": "https://meydan.hacibayram.edu.tr/",
+                "demoLinkLabel": "View Live Project"
+            },
+            {
+                "id": "project10",
+                "image": "assets/images/lms.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_10_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_10_DESC",
+                "technologies": [
+                    ".NET",
+                    "C#",
+                    "Entity Framework",
+                    "Angular",
+                    "Typescript"
+                ],
+                "contributionsKeys": [
+                    "Developed the Portal Module with Angular, providing functionalities such as exams, assignments, class materials, and course management.",
+                    "Implemented the Live Lesson Module integrated with the National Video Conference System (WebRTC) and Zoom, enabling interactive real-time sessions.",
+                    "Ensured seamless integration and data consistency between modules through coordinated backend and frontend development.",
+                    "Participated actively in requirement analysis, design, development, testing, and deployment phases.",
+                    "Applied best practices in UI/UX design, accessibility, and performance optimization to enhance student engagement."
+                ],
+                "demoLink": "https://bilger.hacibayram.edu.tr/",
+                "demoLinkLabel": "View Live Project"
+            },
+            {
+                "id": "project11",
+                "image": "assets/images/video-conference.jpg",
+                "titleKey": "PROJECTS_SECTION.PROJECT_11_TITLE",
+                "descriptionKey": "PROJECTS_SECTION.PROJECT_11_DESC",
+                "technologies": [
+                    "WebRTC",
+                    "SignalR",
+                    ".NET",
+                    "C#",
+                    "Angular",
+                    "Typescript"
+                ],
+                "contributionsKeys": [
+                    "Designed and implemented Mesh and Selective Forwarding Unit (SFU) topologies to optimize video streaming efficiency and scalability.",
+                    "Developed core system components including Video Management Server, Video Record Server, Application Server, and browser clients.",
+                    "Focused on real-time communication performance, seamless user experience, and compatibility across diverse client environments.",
+                    "Collaborated with multidisciplinary teams to ensure robust architecture and effective resource management.",
+                    "Participated in testing and deployment phases to guarantee system reliability under heavy load scenarios."
+                ],
+                "demoLink": "https://argusteknoloji.com/anasayfa/vidi",
+                "demoLinkLabel": "View Live Project"
+            }
+        ],
+        "PROJECT_1_TITLE": "Operations Management Sys.",
+        "PROJECT_1_DESC": "A robust internal system designed for Hepsiburada’s logistics and operations teams to manage warehouse workflows, package handling, and delivery coordination. The application was deployed on a secure network and accessed via VPN by authorized personnel.",
+        "PROJECT_2_TITLE": "Shipment Planning Platform",
+        "PROJECT_2_DESC": "A scalable, external-facing web platform developed for Hepsiburada’s business partners to organize shipment schedules, track package status, and streamline their delivery processes through a self-service interface.",
+        "PROJECT_3_TITLE": "ZES Operation & Partner Portal",
+        "PROJECT_3_DESC": "Developed two critical applications for ZES Zorlu, empowering internal teams and external partners through streamlined operational workflows and customer self-service functionalities. The platforms leveraged Angular on the frontend and .NET Core on the backend to ensure scalable and maintainable architectures.",
+        "PROJECT_4_TITLE": "Runflow Cleaning App.",
+        "PROJECT_4_DESC": "Developed a customer and service-provider facing platform connecting professional cleaners with homeowners, facilitating appointment scheduling, communication, and payments. The application was built with Angular for the frontend, ensuring an intuitive and smooth user experience.",
+        "PROJECT_5_TITLE": "Metech AI – AI-Powered Chatbot.",
+        "PROJECT_5_DESC": "Developed an AI-driven application designed to assist users in analyzing and reviewing CVs with intelligent feedback, leveraging advanced natural language processing and chatbot technologies to enhance recruitment and career development processes.",
+        "PROJECT_6_TITLE": "Greyfood Shopping App",
+        "PROJECT_6_DESC": "Spearheaded development of a comprehensive two-part application suite for Greyfood, supporting wholesalers, distributors, chain markets, and kiosks across B2B and B2C models. The frontend Angular applications were tightly integrated with a .NET Core backend to deliver seamless user experiences and robust operational features.",
+        "PROJECT_7_TITLE": "CNC Bid",
+        "PROJECT_7_DESC": "Developed a comprehensive application facilitating the bidding, negotiation, and procurement processes for large-scale CNC machines. The platform streamlines supplier interactions and purchase management for industrial clients.",
+        "PROJECT_8_TITLE": "Content Management Sys.",
+        "PROJECT_8_DESC": "Contributed to the development of a modern CMS leveraging Angular for the frontend and .NET Core for the backend. The system enabled flexible and reusable content creation by supporting unlimited websites, pages, and posts through dynamically configurable modules tailored for various university departments.",
+        "PROJECT_9_TITLE": "MEYDAN",
+        "PROJECT_9_DESC": "Participated in the development of MEYDAN, a social media platform tailored to university communities, enabling users to create event posts, engage with content through likes, and stay updated on community activities..",
+        "PROJECT_10_TITLE": "Learning Management Sys.",
+        "PROJECT_10_DESC": "Contributed to the full lifecycle development of a Learning Management System supporting remote education, featuring a Portal Module and a Live Lesson Module integrated with national and third-party video conferencing systems.",
+        "PROJECT_11_TITLE": "National Video Conference Sys.",
+        "PROJECT_11_DESC": "Actively contributed to the development of a high-performance National Video Conference System utilizing WebRTC technologies, designed to provide scalable and reliable real-time communication solutions."
+    },
+    "WORKS_SECTION": {
+        "TITLE": "My Works",
+        "WORK_ITEMS": [
+            {
+                "id": "work1",
+                "image": "assets/images/tactical.jpg",
+                "titleKey": "WORKS_SECTION.WORK_1_TITLE",
+                "descriptionKey": "WORKS_SECTION.WORK_1_DESC",
+                "technologies": [
+                    "Angular",
+                    "HTML",
+                    "CSS",
+                    "TypeScript",
+                    "Javascript",
+                    "Artificial Intelligence"
+                ],
+                "demoLink": "https://tactical.netlify.app/",
+                "demoLinkLabel": "Live Demo"
+            },
+            {
+                "id": "work2",
+                "image": "assets/images/portfolio.jpg",
+                "titleKey": "WORKS_SECTION.WORK_2_TITLE",
+                "descriptionKey": "WORKS_SECTION.WORK_2_DESC",
+                "technologies": [
+                    "Angular",
+                    "HTML",
+                    "CSS",
+                    "TypeScript",
+                    "Javascript",
+                    "Artificial Intelligence"
+                ],
+                "demoLink": "https://mustafagonen.netlify.app/",
+                "demoLinkLabel": "Live Demo"
+            }
+        ],
+        "WORK_1_TITLE": "Tactical",
+        "WORK_1_DESC": "I developed a football squad-building and tactics visualization platform that allows users to create custom lineups, adjust player positions, and design strategic formations interactively.",
+        "WORK_2_TITLE": "My Portfolio",
+        "WORK_2_DESC": "My portfolio website showcases my professional experience, projects, and technical expertise with a modern, responsive design built using cutting-edge frontend technologies."
+    },
+    "CONTACT_SECTION": {
+        "TITLE": "Get In Touch",
+        "SUBTITLE": "Have a project in mind? Just want to say hello? Feel free to reach out to me.",
+        "FORM_TITLE": "Send Me a Message",
+        "NAME_LABEL": "Your Name",
+        "NAME_PLACEHOLDER": "Enter your name",
+        "EMAIL_LABEL": "Your Email",
+        "EMAIL_PLACEHOLDER": "Enter your email address",
+        "SUBJECT_LABEL": "Subject",
+        "SUBJECT_PLACEHOLDER": "Subject of your message",
+        "MESSAGE_LABEL": "Your Message",
+        "MESSAGE_PLACEHOLDER": "Type your message here...",
+        "SEND_BUTTON": "Send Message",
+        "SENDING_MESSAGE": "Sending...",
+        "SUCCESS_MESSAGE": "Your message has been sent successfully! Thank you.",
+        "ERROR_MESSAGE": "There was an error sending your message. Please try again later or contact directly.",
+        "REQUIRED_ERROR": "This field is required.",
+        "EMAIL_INVALID_ERROR": "Please enter a valid email address.",
+        "OTHER_CONTACT_TITLE": "Other Ways to Connect",
+        "EMAIL_ADDRESS_LABEL": "Email:",
+        "PHONE_NUMBER_LABEL": "Phone:",
+        "LOCATION_LABEL": "Location:",
+        "SOCIAL_MEDIA_TITLE": "Follow Me",
+        "LINKEDIN_TEXT": "My LinkedIn Profile",
+        "GITHUB_TEXT": "My GitHub Profile",
+        "TWITTER_TEXT": "My Twitter Profile",
+        "MAP_TITLE": "My Location"
+    }
+}

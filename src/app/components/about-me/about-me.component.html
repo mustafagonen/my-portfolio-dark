@@ -1,0 +1,44 @@
+<section id="about" class="about-section modern-v2">
+    <div class="about-container modern-container-v2">
+
+        <div class="about-intro modern-intro-v2">
+            <h2 class="section-title modern-title-v2">
+                {{ 'NAVBAR.ABOUT' | translate }}
+            </h2>
+            <p class="intro-description modern-description-v2">
+                {{'ABOUT_SECTION.INTRO_P1' | translate}}
+            </p>
+            <p class="intro-description modern-description-v2">
+                {{'ABOUT_SECTION.INTRO_P2' | translate}}
+            </p>
+        </div>
+
+        <div class="about-content modern-content-v2">
+            <div class="timeline-wrapper modern-timeline-wrapper-v2">
+                <h3 class="timeline-heading modern-timeline-heading-v2">
+                    {{'ABOUT_SECTION.TIMELINE_HEADING' | translate}}
+                </h3>
+                <div class="timeline modern-timeline-v2">
+
+                    <div class="timeline-item modern-timeline-item-v2"
+                        *ngFor="let item of timelineItems; let i = index">
+                        <div class="timeline-dot modern-timeline-dot-v2"></div>
+                        <div class="timeline-content modern-timeline-content-v2">
+                            <h4 class="timeline-date modern-timeline-date-v2">
+                                {{ item.date | translate }}
+                            </h4>
+                            <h5 class="timeline-title modern-timeline-title-v2">
+                                {{ item.title | translate}}
+                            </h5>
+                            <p class="timeline-description modern-timeline-description-v2">
+                                {{ item.description | translate }}
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

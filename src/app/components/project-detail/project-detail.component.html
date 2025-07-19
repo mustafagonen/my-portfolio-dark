@@ -1,0 +1,63 @@
+<section class="project-detail-section mg-v2">
+    <div class="container mg-container-v2">
+        <button (click)="goBack()" class="back-button mg-btn-secondary">
+            <i class="fas fa-arrow-left"></i> {{ 'PROJECTS_SECTION.BACK_TO_PROJECTS' | translate }}
+        </button>
+
+        <div *ngIf="project" class="project-detail-content mg-project-detail-content-v2">
+            <h2 class="detail-title mg-detail-title-v2">{{ project.titleKey | translate }}</h2>
+
+            <div class="detail-image-wrapper mg-detail-image-wrapper-v2"
+                [ngClass]="{'no-image': !project.image, 'backend-type': project.type === 'backend-api', 'data-science-type': project.type === 'data-science'}">
+                <img [src]="project.image" [alt]="project.titleKey | translate" class="detail-image mg-detail-image-v2"
+                    *ngIf="project.image">
+                <div class="no-image-placeholder" *ngIf="!project.image">
+                    <i class="fas fa-cogs"></i>
+                    <p>{{ 'PROJECTS_SECTION.NO_DETAIL_IMAGE_TEXT' | translate }}</p>
+                </div>
+            </div>
+
+            <div *ngIf="project.contributionsKeys && project.contributionsKeys.length > 0" class="detail-section">
+                <h3>{{ 'PROJECTS_SECTION.CONTRIBUTIONS_TITLE_KEY' | translate }}</h3>
+                <ul class="contributions-list mg-contributions-list-v2">
+                    <li *ngFor="let contributionKey of project.contributionsKeys">
+                        <i class="fas fa-check-circle check-icon"></i> {{ contributionKey | translate }}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="detail-techs mg-detail-techs-v2">
+                <h4>{{ 'PROJECTS_SECTION.TECHNOLOGIES_USED' | translate }}</h4>
+                <div class="tech-badges-container">
+                    <span *ngFor="let tech of project.technologies" class="tech-badge mg-tech-badge-v2">{{ tech
+                        }}</span>
+                </div>
+            </div>
+
+            <div class="detail-links mg-detail-links-v2">
+                <a [href]="project.demoLink" *ngIf="project.demoLink" target="_blank" rel="noopener noreferrer"
+                    class="btn mg-btn mg-btn-secondary">
+                    {{project.demoLinkLabel | translate}}
+                </a>
+
+                <a [href]="project.demoAdminLink" *ngIf="project.demoAdminLink" target="_blank"
+                    rel="noopener noreferrer" class="btn mg-btn mg-btn-primary">
+                    {{project.demoAdminLinkLabel | translate}}
+                </a>
+                <!-- <span *ngIf="!project.demoAdminLink" class="no-link-text">{{ 'PROJECTS_SECTION.NO_ADMIN_DEMO_AVAILABLE'
+                    | translate }}</span>
+
+                <a [href]="project.githubLink" *ngIf="project.githubLink" target="_blank" rel="noopener noreferrer"
+                    class="btn mg-btn mg-btn-primary">
+                    GitHub
+                </a>
+                <span *ngIf="!project.githubLink" class="no-link-text">{{ 'PROJECTS_SECTION.NO_GITHUB_AVAILABLE' |
+                    translate }}</span> -->
+            </div>
+
+        </div>
+        <div *ngIf="!project">
+            <p>{{ 'PROJECTS_SECTION.PROJECT_NOT_FOUND' | translate }}</p>
+        </div>
+    </div>
+</section>

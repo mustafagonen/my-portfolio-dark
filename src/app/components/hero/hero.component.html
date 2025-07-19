@@ -1,0 +1,63 @@
+<section class="hero-section modern-v2">
+    <div class="hero-content-wrapper modern-wrapper-v2">
+
+        <div class="hero-text-content modern-text-v2">
+            <span *ngIf="translateService.currentLang === 'tr'" class="hero-heading modern-heading-v2">
+                <span class="highlight-text modern-highlight-v2" appTypewriterOnce
+                    [textsToCycle]="['Merhaba, Ben Mustafa Gönen','Computer Engineer', 'Frontend Developer', 'Ankara, Turkey','Merhaba, Ben Mustafa Gönen']"
+                    [typingSpeed]="120" [erasingSpeed]="50" [pauseAfterType]="300" [pauseAfterErase]="500"
+                    [startDelay]="500" [loop]="false"></span>
+            </span>
+            <span *ngIf="translateService.currentLang === 'en'" class="hero-heading modern-heading-v2">
+                <span class="highlight-text modern-highlight-v2" appTypewriterOnce
+                    [textsToCycle]="['Hello, I am Mustafa Gönen','Computer Engineer', 'Frontend Developer', 'Ankara, Turkey','Hello, I am Mustafa Gönen']"
+                    [typingSpeed]="120" [erasingSpeed]="50" [pauseAfterType]="300" [pauseAfterErase]="500"
+                    [startDelay]="500" [loop]="false"></span>
+            </span>
+
+            <!-- <span class="highlight-text modern-highlight-v2" data-text="Mustafa Gönen">Mustafa Gönen</span> -->
+            <p class="hero-subheading modern-subheading-v2">
+                <span class="type-skill modern-skill-v2">Software Developer</span>
+                <!-- <span class="splitter">|</span> -->
+                <!-- <span class="type-skill modern-skill-v2">Kullanıcı Deneyimi Meraklısı</span> -->
+            </p>
+            <p class="hero-description modern-description-v2">
+                {{'HERO.INTRO_P1' | translate}}
+            </p>
+            <div class="hero-actions modern-actions-v2">
+                <a href="/projects" class="primary-button modern-button-v2">
+                    <i class="fas fa-code"></i>
+                    {{'HERO.CALL_TO_ACTION_PROJECTS' | translate}}
+                </a>
+                <a href="#contact" class="secondary-button modern-button-v2">
+                    <i class="fas fa-paper-plane"></i>
+                    {{'HERO.CALL_TO_ACTION_CONTACT' | translate}}
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image-side modern-image-side-v2">
+            <div class="profile-image-frame modern-frame-v2">
+                <img src="assets/images/pro.jpg" alt="Mustafa Gönen Profile Picture"
+                    class="profile-picture-detailed modern-picture-v2">
+            </div>
+            <div class="social-links-overlay modern-social-overlay-v2">
+                <a href="https://linkedin.com/in/mustafa-gonen-profile" target="_blank" class="social-icon-modern-v2"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mustafagonen" target="_blank" class="social-icon-modern-v2"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:mustafa.gonen@example.com" class="social-icon-modern-v2" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <a href="#about" class="scroll-down-arrow-modern-v2" aria-label="Aşağı Kaydır">
+        <i class="fas fa-chevron-down"></i>
+    </a>
+</section>

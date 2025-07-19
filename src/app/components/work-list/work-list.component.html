@@ -1,0 +1,35 @@
+<section id="works" class="projects-section mg-v2">
+    <div class="container mg-container-v2">
+        <h2 class="section-title mg-section-title-v2">{{ 'WORKS_SECTION.TITLE' | translate }}</h2>
+
+
+        <div class="projects-grid mg-projects-grid-v2">
+            <a class="project-card mg-project-card-v2" *ngFor="let work of works">
+                <div class="project-image-wrapper mg-project-image-wrapper-v2">
+                    <img [src]="work.image" [alt]="work.titleKey | translate" class="project-image mg-project-image-v2">
+                </div>
+                <div class="project-info mg-project-info-v2">
+                    <h3 class="project-title mg-project-title-v2">{{ work.titleKey | translate }}</h3>
+                    <p class="project-description mg-project-description-v2">{{ work.descriptionKey | translate }}
+                    </p>
+                    <div class="project-techs mg-project-techs-v2">
+                        <span *ngFor="let tech of work.technologies" class="tech-badge mg-tech-badge-v2">{{ tech
+                            }}</span>
+                    </div>
+                    <div class="project-links mg-project-links-v2">
+
+                        <a [href]="work.demoLink" *ngIf="work.demoLink" target="_blank" rel="noopener noreferrer"
+                            class="btn mg-btn mg-btn-secondary">
+                            {{work.demoLinkLabel | translate}}
+                        </a>
+
+                        <a [href]="work.demoAdminLink" *ngIf="work.demoAdminLink" target="_blank"
+                            rel="noopener noreferrer" class="btn mg-btn mg-btn-primary">
+                            {{work.demoAdminLinkLabel | translate}}
+                        </a>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>

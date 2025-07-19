@@ -1,0 +1,37 @@
+<section id="projects" class="projects-section mg-v2">
+    <div class="container mg-container-v2">
+        <h2 class="section-title mg-section-title-v2">{{ 'PROJECTS_SECTION.TITLE' | translate }}</h2>
+
+
+        <div class="projects-grid mg-projects-grid-v2">
+            <a class="project-card mg-project-card-v2" [routerLink]="['/projects', project.id]"
+                *ngFor="let project of projects">
+                <div class="project-image-wrapper mg-project-image-wrapper-v2">
+                    <img [src]="project.image" [alt]="project.titleKey | translate"
+                        class="project-image mg-project-image-v2">
+                </div>
+                <div class="project-info mg-project-info-v2">
+                    <h3 class="project-title mg-project-title-v2">{{ project.titleKey | translate }}</h3>
+                    <p class="project-description mg-project-description-v2">{{ project.descriptionKey | translate }}
+                    </p>
+                    <div class="project-techs mg-project-techs-v2">
+                        <span *ngFor="let tech of project.technologies" class="tech-badge mg-tech-badge-v2">{{ tech
+                            }}</span>
+                    </div>
+                    <div class="project-links mg-project-links-v2">
+
+                        <a [href]="project.demoLink" *ngIf="project.demoLink" target="_blank" rel="noopener noreferrer"
+                            class="btn mg-btn mg-btn-secondary">
+                            {{project.demoLinkLabel | translate}}
+                        </a>
+
+                        <a [href]="project.demoAdminLink" *ngIf="project.demoAdminLink" target="_blank"
+                            rel="noopener noreferrer" class="btn mg-btn mg-btn-primary">
+                            {{project.demoAdminLinkLabel | translate}}
+                        </a>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>

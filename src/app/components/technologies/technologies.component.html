@@ -1,0 +1,24 @@
+<section id="skills" class="skills-section mg-v2">
+    <div class="container mg-container-v2">
+        <h2 class="section-title mg-section-title-v2">{{ 'SKILLS_SECTION.TITLE' | translate }}</h2>
+
+        <div class="skills-categories mg-skills-categories-v2" *ngIf="groupedSkills && getCategoryKeys().length > 0">
+            <ng-container *ngFor="let categoryKey of getCategoryKeys()">
+                <div class="skill-category-block mg-skill-category-block-v2"
+                    *ngIf="groupedSkills[categoryKey]?.length > 0">
+                    <h3 class="category-title mg-category-title-v2">{{ categoryTitles[categoryKey] }}</h3>
+                    <div class="skills-grid mg-skills-grid-v2">
+                        <div class="skill-item mg-skill-item-v2" *ngFor="let skill of groupedSkills[categoryKey]">
+                            <i *ngIf="skill.iconClass" [class]="skill.iconClass" class="skill-icon"></i>
+                            <span class="skill-name">{{ skill.name }}</span>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <div *ngIf="!groupedSkills || getCategoryKeys().length === 0" class="no-skills-message">
+            <p>{{ 'SKILLS_SECTION.NO_SKILLS_AVAILABLE' | translate }}</p>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,57 @@
+<nav class="navbar modern-v2">
+    <div class="navbar-container">
+
+        <a href="/hero" class="navbar-brand modern-brand-v2">
+            <div class="footer-logo">
+                <div class="logo gradient-logo">M.GNN</div>
+            </div>
+        </a>
+
+        <div class="navbar-toggle" [class.open]="isMenuOpen" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="navbar-menu modern-menu-v2" [class.open]="isMenuOpen">
+            <li>
+                <a routerLink="/about-me" class="nav-link modern-link-v2" (click)="closeMenu()">
+                    {{ 'NAVBAR.ABOUT' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/projects" class="nav-link modern-link-v2" (click)="closeMenu()">
+                    {{ 'NAVBAR.PROJECTS' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/works" class="nav-link modern-link-v2" (click)="closeMenu()">
+                    {{ 'NAVBAR.WORKS' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/skills" class="nav-link modern-link-v2" (click)="closeMenu()">
+                    {{ 'NAVBAR.SKILLS' | translate }}
+                </a>
+            </li>
+            <li>
+                <a routerLink="/contact" class="nav-link modern-link-v2" (click)="closeMenu()">
+                    {{ 'NAVBAR.CONTACT' | translate }}
+                </a>
+            </li>
+            <li class="nav-item-button">
+                <a href="assets/documents/Mustafa Gönen CV 2025.pdf" target="_blank"
+                    class="nav-button modern-nav-button-v2">
+                    <i class="fas fa-download"></i>
+                    {{ 'NAVBAR.DOWNLOAD_CV' | translate }}
+                </a>
+            </li>
+            <li class="lang-switcher-wrapper mg-lang-switcher-wrapper-v2">
+                <button class="lang-button mg-lang-button-v2" [class.active]="translateService.currentLang === 'tr'"
+                    (click)="switchLanguage('tr')">TR</button>
+                <button class="lang-button mg-lang-button-v2" [class.active]="translateService.currentLang === 'en'"
+                    (click)="switchLanguage('en')">EN</button>
+            </li>
+        </ul>
+    </div>
+</nav>

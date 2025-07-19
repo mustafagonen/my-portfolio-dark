@@ -1,0 +1,432 @@
+/* src/app/contact-page/contact-page.component.scss */
+
+// Renk Değişkenleri (Mevcut değişkenlerinizle aynı olmalı)
+$dark-background: #1e1e1e;
+$card-background: #2c2c2c;
+$teal-primary: #2dd4bf; // Vurgu rengi
+$teal-secondary: #5eead4; // Açık vurgu rengi
+$text-primary: #f0f0f0;
+$text-secondary: #d4d4d4;
+$border-color: #444444;
+$accent-green: #00C0A6; // Ana başlık altındaki çizgi rengi
+$text-white: #FFFFFF;
+$error-red: #ef4444; // Hata mesajları için
+$success-green: #22c55e; // Başarı mesajları için
+
+// Gölge Değişkenleri
+$shadow-light: 0 2px 8px rgba(0, 0, 0, 0.15);
+$shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.25);
+$shadow-strong: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+// Kenar Yuvarlama (Border Radius) Değişkenleri
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 12px;
+
+.contact-section.mg-v2 {
+    padding: 100px 20px;
+    background-color: $dark-background;
+    color: $text-primary;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        padding: 60px 15px; // Mobil cihazlarda yan boşlukları küçült
+    }
+
+    @media (max-width: 480px) {
+        padding: 40px 10px; // Daha küçük mobil cihazlar için
+    }
+}
+
+.container.mg-container-v2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+        padding: 0 15px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 10px;
+    }
+}
+
+.section-title.mg-section-title-v2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: $text-white;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: $accent-green;
+        margin: 15px auto 0 auto;
+        border-radius: 2px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 2.5rem; // Mobil başlık boyutu küçüldü
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+}
+
+.subtitle.mg-subtitle-v2 {
+    font-size: 1.2rem;
+    color: $text-secondary;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 767px) {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+}
+
+.contact-content.mg-contact-content-v2 {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @media (max-width: 992px) {
+        flex-direction: column; // 992px ve altında alt alta yığılır
+        align-items: center;
+        gap: 30px; // Mobil cihazlarda boşlukları ayarla
+    }
+}
+
+.contact-form-card.mg-contact-form-card-v2,
+.other-contact-info.mg-other-contact-info-v2 {
+    background-color: $card-background;
+    border-radius: $border-radius-large;
+    padding: 40px;
+    box-shadow: $shadow-medium;
+    flex: 1;
+    min-width: 300px; // Bu kısım responsive için ayarlandı
+
+    @media (min-width: 993px) {
+        // Büyük ekranlarda sabit genişlik
+        flex: 1;
+    }
+
+    @media (max-width: 992px) {
+        width: 100%; // Tam genişlik
+        max-width: 600px; // Maksimum genişlik sınırlaması
+        padding: 30px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 25px; // Daha küçük mobil cihazlar için padding
+    }
+}
+
+// Kartların otomatik ortalanması için margin auto ayarları
+.contact-form-card.mg-contact-form-card-v2 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.other-contact-info.mg-other-contact-info-v2 {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+
+.form-title.mg-form-title-v2,
+.info-title.mg-info-title-v2,
+.social-media-title.mg-social-media-title-v2,
+.map-title.mg-map-title-v2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $teal-primary;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background-color: $teal-secondary;
+        border-radius: 1.5px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.6rem; // Mobil başlık boyutu
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+}
+
+.form-group.mg-form-group-v2 {
+    margin-bottom: 25px;
+    text-align: left;
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1rem;
+        color: $text-secondary;
+        font-weight: 500;
+
+        @media (max-width: 480px) {
+            font-size: 0.9rem;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px 15px;
+        background-color: lighten($card-background, 3%);
+        border: 1px solid $border-color;
+        border-radius: $border-radius-small;
+        color: $text-primary;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        resize: vertical;
+
+        &:focus {
+            outline: none;
+            border-color: $teal-primary;
+            box-shadow: 0 0 0 3px rgba($teal-primary, 0.2);
+        }
+
+        &::placeholder {
+            color: lighten($text-secondary, 10%);
+        }
+
+        @media (max-width: 480px) {
+            padding: 10px 12px; // Mobil input padding
+            font-size: 0.9rem;
+        }
+    }
+
+    .error-message {
+        color: $error-red;
+        font-size: 0.85rem;
+        margin-top: 5px;
+        text-align: left;
+
+        @media (max-width: 480px) {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.submit-button.mg-submit-button-v2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    background-color: $teal-primary;
+    color: $text-white;
+    border: none;
+    border-radius: $border-radius-medium;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+    margin-top: 20px;
+    width: 100%; // Mobil cihazlarda tam genişlik
+
+    &:hover:not(:disabled) {
+        background-color: darken($teal-primary, 10%);
+        transform: translateY(-2px);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .fa-spinner {
+        margin-right: 8px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+.submission-status-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: $border-radius-medium;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    font-size: 0.95rem;
+
+    &.success-message {
+        background-color: lighten($success-green, 30%);
+        color: darken($success-green, 20%);
+        border: 1px solid $success-green;
+    }
+
+    &.error-message {
+        background-color: lighten($error-red, 30%);
+        color: darken($error-red, 20%);
+        border: 1px solid $error-red;
+    }
+
+    .fa-check-circle,
+    .fa-times-circle {
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.85rem;
+        padding: 12px;
+    }
+}
+
+.contact-detail.mg-contact-detail-v2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: $text-secondary;
+
+    .contact-icon {
+        color: $teal-primary;
+        font-size: 1.4rem;
+        min-width: 25px;
+        text-align: center;
+
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+            min-width: 20px;
+        }
+    }
+
+    strong {
+        color: $text-primary;
+        font-weight: 600;
+
+        @media (max-width: 480px) {
+            font-size: 0.95rem;
+        }
+    }
+
+    a {
+        color: $teal-secondary;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        word-break: break-all; // Uzun e-posta adresleri için
+
+        &:hover {
+            color: $teal-primary;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.9rem;
+        }
+    }
+
+    span {
+        @media (max-width: 480px) {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.social-links.mg-social-links-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-link.mg-social-link-v2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    color: $text-primary;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: $border-radius-medium;
+    background-color: lighten($card-background, 5%);
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: lighten($card-background, 10%);
+        transform: translateX(5px);
+        color: $teal-secondary;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+        color: $teal-primary;
+
+        @media (max-width: 480px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    span {
+        @media (max-width: 480px) {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 8px 12px;
+        gap: 10px;
+    }
+}
+
+.map-container.mg-map-container-v2 {
+    margin-top: 30px;
+    border-radius: $border-radius-large;
+    overflow: hidden;
+    box-shadow: $shadow-medium;
+
+    iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        height: 250px; // Mobil harita yüksekliği
+    }
+
+    @media (max-width: 480px) {
+        height: 200px;
+    }
+}

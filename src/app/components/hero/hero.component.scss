@@ -1,0 +1,475 @@
+/* Genel Değişkenler (Daha önceki gibi global bir dosyada tanımlı varsayılmıştır) */
+$primary-dark-bg: #111111;
+$secondary-dark-bg: #1C1C1C;
+$text-light: #E0E0E0;
+$text-white: #FFFFFF;
+$accent-green: #00C0A6;
+$accent-green-dark: #00A68A;
+$border-radius-lg: 12px;
+$border-radius-md: 8px;
+
+:host {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    background-color: $primary-dark-bg;
+    padding: 0 30px;
+}
+
+.hero-section.modern-v2 {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: $text-light;
+    padding: 60px 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    // Hafif arka plan deseni
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.1;
+        z-index: 0;
+    }
+}
+
+.hero-content-wrapper.modern-wrapper-v2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 100%;
+    gap: 80px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+}
+
+.hero-text-content.modern-text-v2 {
+    flex: 1;
+    text-align: left;
+    animation: fadeInText 1s ease-out forwards; // Yeni animasyon adı
+    opacity: 0; // Animasyon öncesi gizle
+    transform: translateY(20px); // Hafif başlangıç konumu
+
+    @media (max-width: 1024px) {
+        text-align: center;
+    }
+}
+
+.hero-heading.modern-heading-v2 {
+    font-size: 4.5em;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: $text-white;
+
+    .modern-highlight-v2 {
+        color: $text-white;
+        position: relative;
+        display: inline-block;
+        font-size: 42px;
+        font-weight: 600;
+
+        // Yazı tipi efekti için: CSS ile "typing" animasyonu yerine,
+        // data-text attribute'unu kullanarak JavaScript ile daha kontrollü bir yazım efekti.
+        // CSS'de imleç animasyonunu koruyalım.
+
+    }
+}
+
+@keyframes blink-caret-v2 {
+
+    from,
+    to {
+        border-color: transparent;
+        opacity: 0;
+    }
+
+    /* Hem kenarlık hem de opasite ile kontrol */
+    50% {
+        border-color: $accent-green;
+        opacity: 1;
+    }
+}
+
+.hero-subheading.modern-subheading-v2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: lighten($text-light, 5%);
+    margin-bottom: 30px;
+    margin-top: 4px;
+    animation: fadeInText 1.2s ease-out forwards;
+    animation-delay: 0.2s; // Gecikmeli animasyon
+    opacity: 0;
+    transform: translateY(20px);
+
+    .modern-skill-v2 {
+        color: $accent-green;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .splitter {
+        color: $text-white;
+        font-weight: 400;
+        font-size: 28px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
+
+.hero-description.modern-description-v2 {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-bottom: 50px;
+    color: $text-light;
+    animation: fadeInText 1.4s ease-out forwards;
+    animation-delay: 0.4s; // Gecikmeli animasyon
+    opacity: 0;
+    transform: translateY(20px);
+
+    @media (max-width: 1024px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.hero-actions.modern-actions-v2 {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 60px;
+    animation: fadeInText 1.6s ease-out forwards;
+    animation-delay: 0.6s; // Gecikmeli animasyon
+    opacity: 0;
+    transform: translateY(20px);
+
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.primary-button.modern-button-v2,
+.secondary-button.modern-button-v2 {
+    padding: 12px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    transition: all 0.3s ease; // Daha standart bir geçiş
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.primary-button.modern-button-v2 {
+    background-image: linear-gradient(45deg, $accent-green, lighten($accent-green, 15%));
+    color: $text-white;
+
+    &:hover {
+        background-image: linear-gradient(45deg, $accent-green-dark, $accent-green);
+        transform: translateY(-2px); // Daha az hareket
+        box-shadow: 0 10px 20px rgba(0, 192, 166, 0.6);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 5px 10px rgba(0, 192, 166, 0.4);
+    }
+}
+
+.secondary-button.modern-button-v2 {
+    background-color: transparent;
+    color: $accent-green;
+    border: 2px solid $accent-green;
+
+    &:hover {
+        background-color: $accent-green;
+        color: $text-white;
+        transform: translateY(-2px); // Daha az hareket
+        box-shadow: 0 10px 20px rgba(0, 192, 166, 0.5);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.social-links-overlay.modern-social-overlay-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 0; // Sağdan dışarı taşma
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: rgba($secondary-dark-bg, 0.8); // Daha opak arka plan
+    border-radius: $border-radius-md;
+    backdrop-filter: blur(8px); // Bulanıklık arttırıldı
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeInFromRight 1.5s ease-out forwards;
+    animation-delay: 0.8s; // Gecikmeli animasyon
+
+    @media (max-width: 1024px) {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        background-color: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+        animation: none;
+        transform: none;
+    }
+}
+
+.social-icon-modern-v2 {
+    color: $text-light;
+    font-size: 2.2em;
+    transition: color 0.3s ease, transform 0.2s ease;
+
+    i {
+        font-size: 22px;
+    }
+
+    &:hover {
+        color: $accent-green;
+        transform: scale(1.1); // Sadece ölçeklendirme, daha az hareket
+    }
+}
+
+.hero-image-side.modern-image-side-v2 {
+    flex: 0 0 450px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Animasyonu daha akıcı hale getirelim
+    animation: fadeInImage 1.5s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.9); // Başlangıçta biraz küçülmüş
+
+    @media (max-width: 1024px) {
+        order: -1;
+        flex: none;
+        width: 80%;
+        max-width: 350px;
+        height: 350px;
+    }
+
+    @media (max-width: 576px) {
+        max-width: 280px;
+        height: 280px;
+    }
+}
+
+.profile-image-frame.modern-frame-v2 {
+    position: relative; // Absolute yerine relative, düzgün duruş için
+    width: 260px;
+    height: 260px;
+    border-radius: $border-radius-md; // Daha az yuvarlak, daha köşeli bir görünüm
+    overflow: hidden;
+    border: 4px solid $accent-green;
+    box-shadow: 0 0 40px rgba(0, 192, 166, 0.6);
+    z-index: 2;
+    // transform: rotate(5deg); // Yamuk durmaması için döndürmeyi kaldırdık
+    background-color: $secondary-dark-bg; // Resim yüklenene kadar arkaplan
+
+    // Çerçevenin etrafında dekoratif bir parlaklık halkası
+    &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        background: linear-gradient(45deg, $accent-green, transparent);
+        border-radius: $border-radius-md + 5px;
+        z-index: -1;
+        filter: blur(15px); // Bulanıklaştır
+        opacity: 0.7;
+        animation: pulseBorder 3s infinite alternate ease-in-out; // Nabız efekti
+    }
+
+    @media (max-width: 1024px) {
+        position: relative;
+        transform: rotate(0deg);
+    }
+}
+
+.profile-picture-detailed.modern-picture-v2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(10%) brightness(95%); // Daha az gri, daha parlak
+    transition: filter 0.5s ease, transform 0.3s ease;
+
+    &:hover {
+        filter: grayscale(0%) brightness(100%);
+        transform: scale(1.02); // Daha nazik bir büyüme
+    }
+}
+
+// Dekoratif Arka Plan Şekilleri (Daha büyük ve daha az belirgin)
+.hero-section.modern-v2::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba($accent-green, 0.08) 0%, transparent 70%); // Daha şeffaf
+    border-radius: 50%;
+    filter: blur(120px); // Daha bulanık
+    z-index: 0;
+    animation: float-two-v2 18s ease-in-out infinite alternate;
+}
+
+.hero-section.modern-v2::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba($accent-green, 0.06) 0%, transparent 70%); // Daha şeffaf
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 0;
+    animation: float-one-v2 15s ease-in-out infinite alternate;
+}
+
+@keyframes float-one-v2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(30px, 40px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes float-two-v2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-30px, -40px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+// Profil çerçevesi için Nabız efekti
+@keyframes pulseBorder {
+
+    0%,
+    100% {
+        opacity: 0.7;
+        filter: blur(15px);
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(25px);
+    }
+}
+
+
+// Sayfa boyunca kaydırma oku
+.scroll-down-arrow-modern-v2 {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5em;
+    color: $accent-green;
+    animation: bounce-modern-v2 2.5s infinite ease-in-out;
+    text-decoration: none;
+    opacity: 0.8;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+
+    i {
+        font-size: 20px;
+    }
+
+    &:hover {
+        opacity: 1;
+        color: $accent-green-dark;
+    }
+}
+
+@keyframes bounce-modern-v2 {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+
+    // Hafifletildi
+}
+
+/* Giriş Animasyonları (Daha akıcı ve farklı başlangıç pozisyonları) */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
