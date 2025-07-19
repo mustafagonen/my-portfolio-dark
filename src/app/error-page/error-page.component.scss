@@ -1,74 +1,218 @@
-@import "../../styles.scss";
+/* src/app/not-found-page/not-found-page.component.scss */
 
-.error-img {
-    margin-top: 24px;
+// Renk Değişkenleri (Mevcut değişkenlerinizle aynı olmalı)
+$dark-background: #1e1e1e;
+$card-background: #2c2c2c; // İçerik kutusu için hafif koyu
+$teal-primary: #2dd4bf; // Vurgu rengi
+$teal-secondary: #5eead4; // Açık vurgu rengi
+$text-primary: #f0f0f0;
+$text-secondary: #d4d4d4;
+$border-color: #444444;
+$accent-green: #00C0A6; // Genel başlık altındaki çizgi rengi
+$text-white: #FFFFFF;
+
+// Gölge Değişkenleri
+$shadow-light: 0 2px 8px rgba(0, 0, 0, 0.15);
+$shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.25);
+$shadow-strong: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+// Kenar Yuvarlama (Border Radius) Değişkenleri
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 12px;
+
+:host {
+    display: block !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: linear-gradient(135deg, $dark-background 0%, darken($dark-background, 5%) 100%);
 }
 
-.title-1 {
-    color: #0093C9;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 0;
-}
 
-.title-2 {
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    color: #10B981;
-    margin-bottom: 0;
-}
-
-.title-3 {
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    color: #10B981;
-    margin-top: 8px;
-}
-
-
-.home-page-btn-wrapper {
-    width: 350px;
-    height: 40px;
-    border: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 13px;
+.not-found-section.mg-v2 {
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 24px;
-    padding-left: 12px;
-    padding-right: 12px;
-    background-color: #0093C9;
+    background-image: linear-gradient(135deg, $dark-background 0%, darken($dark-background, 5%) 100%);
+    color: $text-primary;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        padding: 30px 15px;
+    }
+}
+
+.container.mg-container-v2 {
+    max-width: 700px; // İçeriğin genişliğini daha da sınırla
+    margin: 0 auto;
+}
+
+.not-found-content.mg-not-found-content-v2 {
+    background-color: $card-background; // Daha soft bir arka plan
+    border-radius: $border-radius-large;
+    padding: 50px 30px; // Daha minimal padding
+    box-shadow: $shadow-strong; // Daha belirgin bir gölge, elemanı öne çıkarır
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba($border-color, 0.5); // Hafif bir kenarlık
+
+    // Arka plana hafif bir noise veya desen eklemek isterseniz
+    // background-image: url('/assets/images/subtle-pattern.png'); // Örnek path
+    // background-blend-mode: overlay;
+    // opacity: 0.9; // Biraz transparan
     position: relative;
+    overflow: hidden; // İçerik taşmasını engelle
+
+    // Hafif bir parlama veya animasyon efekti için
+    &::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle at center, rgba($teal-primary, 0.05) 0%, transparent 70%);
+        opacity: 0.5;
+        transform: rotate(45deg);
+        // animation: subtleGlow 15s infinite alternate ease-in-out;
+        pointer-events: none; // Etkileşimi engelle
+    }
+
+    @media (max-width: 768px) {
+        padding: 35px 25px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 25px 15px;
+    }
 }
 
-.home-page-btn-wrapper img {
-    position: absolute;
-    right: 12px;
+@keyframes subtleGlow {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.05) rotate(10deg);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.5;
+    }
 }
 
-@media screen and (max-width:576px) {
 
-    .title-1 {
-        font-size: 26px;
+.error-code.mg-error-code-v2 {
+    font-size: 6rem;
+    /* Önemli ölçüde küçüldü */
+    font-weight: 700;
+    color: rgba($teal-primary, 0.7);
+    /* Daha soft bir teal */
+    margin-bottom: 10px; // Boşluk küçüldü
+    text-shadow: 0 0 10px rgba($teal-primary, 0.3);
+    /* Daha soft parlaklık */
+    line-height: 1;
+    letter-spacing: -2px; // Harfleri biraz daralt
+    position: relative; // Z-index için
+    z-index: 1; // İçeriğin üstünde kalsın
+
+    // Hafif bir degrade renk geçişi
+    background: -webkit-linear-gradient(45deg, $teal-primary, $teal-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+        font-size: 4.5rem;
     }
 
-    .title-2 {
-        font-size: 14px;
+    @media (max-width: 480px) {
+        font-size: 3.5rem;
+    }
+}
+
+.error-title.mg-error-title-v2 {
+    font-size: 2rem;
+    /* Daha minimal */
+    font-weight: 600;
+    color: $text-white;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
     }
 
-    .title-3 {
-        font-size: 14px;
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+    }
+}
+
+.error-message.mg-error-message-v2,
+.error-guidance.mg-error-guidance-v2 {
+    font-size: 1rem;
+    /* Daha küçük font */
+    color: $text-secondary;
+    margin-bottom: 8px; // Boşluk küçüldü
+    max-width: 500px;
+    line-height: 1.6; // Okunabilirliği korumak için satır aralığı artırıldı
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        font-size: 0.95rem;
     }
 
-    .home-page-btn-wrapper {
-        width: 260px;
+    @media (max-width: 480px) {
+        font-size: 0.85rem;
+    }
+}
+
+.home-button.mg-home-button-v2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px; // Daha minimal padding
+    margin-top: 25px; // Daha az boşluk
+    background-color: $teal-primary;
+    color: $text-white;
+    border: none;
+    border-radius: $border-radius-medium;
+    font-size: 1rem; // Daha küçük font
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        background-color: darken($teal-primary, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba($teal-primary, 0.3); // Hafif parlama gölgesi
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    @media (max-width: 768px) {
+        padding: 10px 22px;
+        font-size: 0.95rem;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+        margin-top: 15px;
     }
 }

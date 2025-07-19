@@ -7,16 +7,13 @@ import { MgHeroComponent } from './components/hero/hero.component';
 import { MgAboutMeComponent } from './components/about-me/about-me.component';
 import { MgTechnologiesComponent } from './components/technologies/technologies.component';
 import { MgWorkListComponent } from './components/work-list/work-list.component';
+import { MgErrorPageComponent } from './error-page/error-page.component';
 
 export const routes: Routes = [
-
-  { path: 'contact', title: "Contact Me", component: MgContactComponent },
-
 
 
   { path: '', title: "MG Portfolio", component: MgHeroComponent },
 
-  { path: 'hero', title: "Hero", component: MgHeroComponent },
   { path: 'about-me', title: "About Me", component: MgAboutMeComponent },
 
   { path: 'projects', title: "Projects", component: MgProjectListComponent },
@@ -24,6 +21,10 @@ export const routes: Routes = [
 
   { path: 'works', title: "Works", component: MgWorkListComponent },
 
-
   { path: 'skills', title: "About Me", component: MgTechnologiesComponent },
+
+  { path: 'contact', title: "Contact Me", component: MgContactComponent },
+
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: MgErrorPageComponent }
 ];

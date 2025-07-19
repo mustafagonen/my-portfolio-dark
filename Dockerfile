@@ -15,7 +15,7 @@ RUN if [ "$CONFIGURATION" = "production" ]; then \
 # prpl-server aşaması
 FROM node:18
 WORKDIR /app
-COPY --from=build /app/dist/mg-portfolio/browser /app
+COPY --from=build /app/dist/mg-portfolio-dark/browser /app
 RUN npm install -g prpl-server
 
 EXPOSE 8080

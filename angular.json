@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mg-portfolio": {
+    "mg-portfolio-dark": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/mg-portfolio",
+            "outputPath": "dist/mg-portfolio-dark",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -86,10 +86,10 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "mg-portfolio:build:production"
+              "buildTarget": "mg-portfolio-dark:build:production"
             },
             "development": {
-              "buildTarget": "mg-portfolio:build:development"
+              "buildTarget": "mg-portfolio-dark:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,7 +97,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "mg-portfolio:build"
+            "buildTarget": "mg-portfolio-dark:build"
           }
         },
         "test": {

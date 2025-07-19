@@ -23,6 +23,14 @@ $border-radius-small: 4px;
 $border-radius-medium: 8px;
 $border-radius-large: 12px;
 
+:host {
+    display: block !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: $dark-background;
+}
+
 .contact-section.mg-v2 {
     padding: 100px 20px;
     background-color: $dark-background;

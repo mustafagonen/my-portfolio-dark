@@ -509,5 +509,11 @@
         "GITHUB_TEXT": "My GitHub Profile",
         "TWITTER_TEXT": "My Twitter Profile",
         "MAP_TITLE": "My Location"
+    },
+    "NOT_FOUND_PAGE": {
+        "TITLE": "404 - Page Not Found",
+        "MESSAGE": "Oops! We can't seem to find the page you're looking for.",
+        "GUIDANCE": "Perhaps you mistyped the address or the page may have moved or been deleted.",
+        "BUTTON_TEXT": "Go to Homepage"
     }
 }

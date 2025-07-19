@@ -509,5 +509,11 @@
         "GITHUB_TEXT": "GitHub Profilim",
         "TWITTER_TEXT": "Twitter Profilim",
         "MAP_TITLE": "Konumum"
+    },
+    "NOT_FOUND_PAGE": {
+        "TITLE": "404 - Sayfa Bulunamadı",
+        "MESSAGE": "Üzgünüz, aradığınız sayfayı bulamadık.",
+        "GUIDANCE": "Belki de yanlış bir şeyler yazdınız veya sayfa taşınmış/silinmiş olabilir.",
+        "BUTTON_TEXT": "Anasayfaya Git"
     }
 }

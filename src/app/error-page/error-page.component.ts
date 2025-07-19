@@ -1,26 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { SharedModule } from '../shared.module';
-import { Router } from '@angular/router';
+// src/app/not-found-page/not-found-page.component.ts
+
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router'; // routerLink için import edildi
 
 @Component({
-    selector: 'app-error-page',
+    selector: 'mg-error-page',
     templateUrl: './error-page.component.html',
-    styleUrls: ['./error-page.component.scss'],
+    styleUrl: './error-page.component.scss',
+    standalone: true,
     imports: [
-        SharedModule
+        CommonModule,
+        TranslateModule,
     ],
-    standalone: true
+
 })
-export class ErrorPageComponent implements OnInit {
-
-    constructor(
-        private _router: Router,
-    ) { }
-
-    ngOnInit(): void { }
-
-    onNavigateHomePage() {
-        this._router.navigateByUrl(`/`);
-    }
-
+export class MgErrorPageComponent {
+    constructor(private translate: TranslateService) { } // TranslateService'i kullanmak isterseniz
 }

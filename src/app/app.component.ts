@@ -20,7 +20,7 @@ import { MgFooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
 
-  title = 'mg-portfolio';
+  title = 'mg-portfolio-dark';
   isLogin: any = false;
   isLoginUrl: any = '';
 

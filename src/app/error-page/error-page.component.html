@@ -1,59 +1,13 @@
-<!-- Desktop -->
-<div class="desktop-wrapper">
-    <div class="text-center">
-        <img class="error-img" src="assets/images/error-page.svg">
-        <p class="title-1">{{'Üzgünüz!' | translate}}</p>
-        <p class="title-2">
-            {{'Aradığınız sayfayı bulamadık.' | translate}}
-        </p>
-
-        <p class="title-3">
-            {{'Lütfen Ana Sayfa’ya gidip tekrar deneyin.' | translate}}
-        </p>
-
-        <div class="home-page-btn-wrapper" (click)="onNavigateHomePage()">
-            {{'Ana Sayfaya Git' | translate}}
-            <img src="assets/images/chevron-right.svg">
+<section class="not-found-section mg-v2">
+    <div class="container mg-container-v2">
+        <div class="not-found-content mg-not-found-content-v2">
+            <h1 class="error-code mg-error-code-v2">404</h1>
+            <h2 class="error-title mg-error-title-v2">{{ 'NOT_FOUND_PAGE.TITLE' | translate }}</h2>
+            <p class="error-message mg-error-message-v2">{{ 'NOT_FOUND_PAGE.MESSAGE' | translate }}</p>
+            <p class="error-guidance mg-error-guidance-v2">{{ 'NOT_FOUND_PAGE.GUIDANCE' | translate }}</p>
+            <a class="home-button mg-home-button-v2" href="/">
+                {{ 'NOT_FOUND_PAGE.BUTTON_TEXT' | translate }}
+            </a>
         </div>
     </div>
-</div>
-
-<!-- Tablet -->
-<div class="tablet-wrapper">
-    <div class="text-center">
-        <img class="error-img" src="assets/images/error-page.svg">
-        <p class="title-1">{{'Üzgünüz!' | translate}}</p>
-        <p class="title-2">
-            {{'Aradığınız sayfayı bulamadık.' | translate}}
-        </p>
-
-        <p class="title-3">
-            {{'Lütfen Ana Sayfa’ya gidip tekrar deneyin.' | translate}}
-        </p>
-
-        <div class="home-page-btn-wrapper" (click)="onNavigateHomePage()">
-            {{'Ana Sayfaya Git' | translate}}
-            <img src="assets/images/chevron-right.svg">
-        </div>
-    </div>
-</div>
-
-<!-- Mobile -->
-<div class="mobile-wrapper">
-    <div class="text-center">
-        <img class="error-img" src="assets/images/error-page.svg">
-        <p class="title-1">{{'Üzgünüz!' | translate}}</p>
-        <p class="title-2">
-            {{'Aradığınız sayfayı bulamadık.' | translate}}
-        </p>
-
-        <p class="title-3">
-            {{'Lütfen Ana Sayfa’ya gidip tekrar deneyin.' | translate}}
-        </p>
-
-        <div class="home-page-btn-wrapper" (click)="onNavigateHomePage()">
-            {{'Ana Sayfaya Git' | translate}}
-            <img src="assets/images/chevron-right.svg">
-        </div>
-    </div>
-</div>
+</section>
